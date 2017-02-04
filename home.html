@@ -2,79 +2,62 @@
 <html>
 <link rel="stylesheet" href="style.css">
 <head>
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="processing.js"></script>
-<script src="jquery-3.1.1.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ian wagner</title>
+  <title>ian wagner</title>
 </head>
 <body>
 
-<div class="col-dt-4 col-ta-1 col-ph-1">
+<div class="col-dt-4 col-ta-5 col-ph-1">
 <p></p>
-
+<p></p>
 </div>
 
 <div class="col-dt-1 col-ta-1 col-ph-1">
 <p></p>
 </div>
 
-
- <div class="col-dt-3 col-ta-4 col-ph-3"> 
-<h1 class="homename">
-<a href="home.html"> 
-ian wagner
-</a>
+<div class="col-dt-5 col-ta-7 col-ph-3">
+<h1 class="bigarrow">
+  <a href="index.html">
+  &#10094;
 </h1>
-</div>
-</div>
-
-<div class="col-dt-1 col-ta-2 col-ph-2">
-<p></p>
+</a>
+<h1 class="title">work</h1>
 </div>
 
-<div class="col-dt-3 col-ta-4 col-ph-3">
-<nav>
-  <ul>
-    <li><a href="bio.html">bio</a></li>
-    <li><a href="index.html">work</a></li>
-    <li><a href="contact.html">contact</a></li>
+<div class="col-dt-9 col-ta-8 col-ph-4">
+<h2>3D</h2>
+  <ul class="underline">
+    <li><a href="grocery.html">grocery</a></li>
+    <li><a href="house.html">wax house</a></li>
+    <li><a href="phone.html">80's iPhone</a></li>
   </ul>
-</nav>
-<script>
-$(document).ready(function(){
-      $('ul').each(function(){
-            // get current ul
-            var $ul = $(this);
-            // get array of list items in current ul
-            var $liArr = $ul.children('li');
-            // sort array of list items in current ul randomly
-            $liArr.sort(function(a,b){
-                  // Get a random number between 0 and 10
-                  var temp = parseInt( Math.random()*10 );
-                  // Get 1 or 0, whether temp is odd or even
-                  var isOddOrEven = temp%2;
-                  // Get +1 or -1, whether temp greater or smaller than 5
-                  var isPosOrNeg = temp>5 ? 1 : -1;
-                  // Return -1, 0, or +1
-                  return( isOddOrEven*isPosOrNeg );
-            })
-            // append list items to ul
-            .appendTo($ul);            
-      });
-});
-</script>
-</div>
+
+<h2>photography</h2>
+  <ul class="underline">
+    <li><a href="memory.html">memory series</a></li>
+  </ul>
 </div>
 
-<div class="butterfly">
-<canvas data-processing-sources="butterfly.pde"></canvas>
+<div class="col-dt-9 col-ta-8 col-ph-4">
+<h2>digital fabrication</h2>
+  <ul class="underline">
+    <li><a href="greygoo.html">grey goo</a></li>
+  </ul>
+
+<h2>graphic</h2>
+  <ul class="underline">
+    <li><a href="icon.html">icon</a></li>
+    <li><a href="illustration.html">illustration</a></li>
+  </ul>
+  </ul>
 </div>
+
 
 <div class="col-dt-3 col-ta-3 col-ph-3">
 <footer>ian wagner &copy. All rights reserved ian wagner 2016.</footer>
 </div>
+
 </body>
 </html>
