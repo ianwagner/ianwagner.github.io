@@ -46,6 +46,12 @@ bottom: 10px;
 text-align: right;
  }
 
+.nav { 
+padding-bottom: 
+10px;
+font-size: 20px;
+ }
+
 .butterfly { 
  position: relative;
  width: 100%;
