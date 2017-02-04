@@ -26,15 +26,18 @@ a:hover, a:active {
   position: relative;
 }
 
+video { 
+}
+
 
 div { 
 	border: solid black 1px;
 	float: center;
-	overflow: scroll;
+	overflow: auto;
 }
 
 p {
-overflow: scroll;
+overflow: auto;
 
 }
 
@@ -45,6 +48,12 @@ position: fixed;
 bottom: 10px;
 text-align: right;
  }
+.movie { 
+	align-content: center;
+position: relative;
+float: center;
+ }
+
 
 .nav { 
 padding-bottom: 
