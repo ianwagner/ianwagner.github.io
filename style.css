@@ -127,7 +127,7 @@ text-align: center;
 @media (min-width: 992px) { 
 .col-dt-1, .col-dt-2, .col-dt-3, .col-dt-4, 
 .col-dt-5, .col-dt-6, .col-dt-7, .col-dt-8, 
-.col-dt-9, .col-dt-10 { 
+.col-dt-9, .col-dt-10, .col-dt-11 { 
 float: left; } 
 .col-dt-1 { 
 width: 5%; 
@@ -158,6 +158,9 @@ width: 33%;
 }
 .col-dt-10 { 
 width: 20%; 
+}
+.col-dt-11 { 
+width: 15%; 
 }
 }
 
