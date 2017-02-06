@@ -27,10 +27,6 @@ a:hover, a:active {
   position: relative;
 }
 
-video { 
-}
-
-
 div { 
 	border: solid black 1px;
 	float: center;
@@ -48,13 +44,7 @@ color: #d3d3d3;
 position: fixed; 
 bottom: 10px;
 text-align: right;
- }
-.movie { 
-	align-content: center;
-position: relative;
-float: center;
- }
-
+}
 
 .nav { 
 padding-bottom: 
@@ -175,7 +165,7 @@ width: 20%;
 @media (min-width: 768px) and (max-width: 991px) { 
 .col-ta-1, .col-ta-2, .col-ta-3, .col-ta-4, 
 .col-ta-5, .col-ta-6, .col-ta-7, .col-ta-8, 
-.col-ta-9, .col-ta-10{ 
+.col-ta-9, .col-ta-10 { 
 float: left; } 
 
 .col-ta-1 { 
