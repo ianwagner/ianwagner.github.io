@@ -73,7 +73,7 @@ font-size: 20px;
 .title { 
 font-size: 300%;
 font-weight: bold;
-color: #f08080;
+color: #ff7f7f;
 opacity: .9;
 margin-top: -30px;
 padding-left: 40px;
@@ -89,9 +89,9 @@ padding-left: 40px;
 }
 
 .arrow { 
-font-size: 200%;
+font-size: 250%;
 font-weight: bold;
-color: #f08080;
+color: #ff7f7f;
 margin-top: 50px;
 text-align: center;
 }
