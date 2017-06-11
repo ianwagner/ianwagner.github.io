@@ -2,7 +2,7 @@
 boolean flying = false; 
 boolean atRest = true; 
 
-float posX = random(400); 
+float posX = random(100); 
 float posY = random(500);
 
 float velX; 
@@ -23,6 +23,7 @@ void setup() {
 
 void draw() { 
   background(0);
+  frameRate(35);
   
   color(255); 
 triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
