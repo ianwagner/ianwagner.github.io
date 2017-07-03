@@ -1,4 +1,6 @@
 
+grey = #d5dae2;
+
 boolean flying = false; 
 boolean atRest = true; 
 
@@ -22,7 +24,7 @@ void setup() {
 } 
 
 void draw() { 
-  background(0);
+  background(grey);
   frameRate(35);
   
   color(255); 

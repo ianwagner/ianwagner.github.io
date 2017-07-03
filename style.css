@@ -1,8 +1,8 @@
 * { 
 box-sizing: border-box;
 font-family: Helvetica, Arial, Sans-Serif;
-color: #ffffff;
-background: #000000;
+color: #000000;
+background: #d5dae2;
 overflow: hidden;
 }
 
@@ -30,12 +30,12 @@ a:link, a:visited {
  }
 
 a:hover, a:active {
-  color: grey;
+  color: #ffffff;
   position: relative;
 }
 
 div { 
-	border: solid black 1px;
+	border: solid black 0px;
 	float: center;
 	overflow: auto;
 }
