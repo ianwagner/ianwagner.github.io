@@ -28,6 +28,7 @@ void draw() {
   frameRate(35);
   
   color(255); 
+  noStroke();
 triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
 triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
   
