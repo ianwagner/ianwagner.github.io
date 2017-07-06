@@ -2,7 +2,6 @@
 box-sizing: border-box;
 font-family: Helvetica, Arial, Sans-Serif;
 color: #000000;
-background: #d5dae2;
 overflow: hidden;
 }
 
@@ -53,6 +52,14 @@ bottom: 10px;
 text-align: right;
 }
 
+.homeBG{
+background-image: url('images/pinkWaves.png');
+}
+
+.otherBG { 
+background: #d5dae2;
+ }
+
 .nav { 
 padding-bottom: 
 10px;
@@ -73,7 +80,7 @@ font-size: 20px;
 .title { 
 font-size: 300%;
 font-weight: bold;
-color: #ff7f7f;
+color: #ff72a8;
 opacity: .9;
 margin-top: -30px;
 padding-left: 40px;
@@ -91,7 +98,7 @@ padding-left: 40px;
 .arrow { 
 font-size: 250%;
 font-weight: bold;
-color: #ff7f7f;
+color: #ff72a8;
 margin-top: 50px;
 text-align: center;
 }
