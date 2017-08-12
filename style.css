@@ -60,6 +60,10 @@ background-image: url('images/pinkWaves.png');
 background: #d5dae2;
  }
 
+ .blankBG { 
+background: #ffffff;
+ }
+
 .nav { 
 padding-bottom: 
 10px;
@@ -70,6 +74,14 @@ font-size: 20px;
  position: relative;
  width: 100%;
  height: 100%
+
+ }
+
+ .insightful { 
+ position: relative;
+ padding-left: 25%;
+ width: 100%;
+ height: 100%;
 
  }
 
@@ -118,7 +130,13 @@ font-size: 400%;
 font-style: italic;
 font-weight: bold;
 margin-bottom: 0px;
+}
 
+.insight { 
+font-size: 250%; 
+font-style: italic;
+font-weight: bold;
+margin-top: 0px;
 }
 .name { 
 font-size: 200%; 
