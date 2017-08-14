@@ -84,6 +84,12 @@ font-size: 20px;
 
  }
 
+ .insight2 {
+font-size: 200%;
+font-weight: bold;
+color: #000000;
+ }
+
 .header {
 	position: fixed;
 }

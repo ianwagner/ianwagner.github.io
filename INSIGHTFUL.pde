@@ -1,3 +1,5 @@
+shape s = new shape();
+
 PImage a;
 PImage b;
 PImage c;
@@ -6,7 +8,7 @@ PImage d;
 float ax, ay, bx, by, cx, cy, dx, dy;
 
 void setup() {
-  size(300, 200);
+  size(100, 100);
   
     a = loadImage("CIRCLE.png");
     b = loadImage("EYE.png");
@@ -15,18 +17,18 @@ void setup() {
     
     imageMode(CENTER);
 
-ax = random(75,225);
-ay = random(75,125);
-bx = random(100,200);
-by = random(60, 140);
-cx = random(100, 200);
-cy = random(50, 150);
-dx = random(75,225);
-dy = random(75,125);
+ax = random(0,height);
+ay = random(0,height);
+bx = random(0,height);
+by = random(0,height);
+cx = random(0,height);
+cy = random(0,height);
+dx = random(0,height);
+dy = random(0,height);
 
 }
 void draw() { 
-  background(255);
+  background(0);
   
           pushMatrix();
           if(dist(mouseX, mouseY, dx, dy) <50) {
@@ -87,4 +89,9 @@ void draw() {
       popMatrix();
     
 
+
+}
+
+class shape { 
+  
 }
