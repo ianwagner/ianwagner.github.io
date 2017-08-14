@@ -15,56 +15,70 @@
 	
 <meta charset="utf-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>ian wagner</title>
 
 </head>
 
 <body>
 
+<div style='background-color: #000000; font-color: #ffffff; padding: 20px; width: 100%; '>
 
 <div class='logo'>
 <canvas data-processing-sources="INSIGHTFUL.pde"></canvas>
 </div>
 
-<p></p>
-
+<div class='insightful'>
 <a class ='insight' href='insightful.html'>The Insightful Hustle
 </a>
+</div>
 
-<p> </p>
+</div>
 
-<p> </p>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">:P</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">
+    <img src="images/halfCircle.png" style="height:30px">
+    Ambition
+    </a>
+    <a href="#">
+    <img src="images/EYE.png" style="height:30px">
+    Trust
+    </a>
+    <a href="#">
+    <img src="images/CIRCLE.png" style="height:30px">
+    Energy
+    </a>
+    <a href="#">
+    <img src="images/SQUARE.png" style="height:30px">
+    Strength
+    </a>
+  </div>
+</div>
 
-<p> </p>
-
-
-<img src="images/halfCircle.png" style="width:50px">
-<a class="insight2">
-  Ambition
-</a>
-
-<p class='insight3'>Nam quis gravida massa. Sed turpis ipsum, tincidunt eget purus in, facilisis aliquet arcu.</p>
-
-<img src="images/CIRCLE.png" style="width:50px">
-<a class="insight2">
-  Other
-</a>
-
-<p class='insight3'>Nam quis gravida massa. Sed turpis ipsum, tincidunt eget purus in, facilisis aliquet arcu.</p>
-
-<img src="images/EYE.png" style="width:50px">
-<a class="insight2">
-  Words
-</a>
-
-<p class='insight3'>Nam quis gravida massa. Sed turpis ipsum, tincidunt eget purus in, facilisis aliquet arcu.</p>
-
-<img src="images/SQUARE.png" style="width:50px">
-<a class="insight2">
-  For stuff
-</a>
-
-<p class='insight3'>Nam quis gravida massa. Sed turpis ipsum, tincidunt eget purus in, facilisis aliquet arcu.</p>
 
 </body>
+
+<script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 </html>
