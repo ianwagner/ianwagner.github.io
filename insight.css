@@ -1,0 +1,45 @@
+* { 
+font-family: Helvetica, Arial, Sans-Serif;
+color: #000000;
+}
+
+body ul{ 
+list-style: none;
+ }
+a:link, a:visited { 
+ text-decoration: none;
+ }
+
+a:hover, a:active {
+color: #74767a;
+}
+
+.insightful { 
+}
+
+ .insight { 
+font-size: 250%; 
+font-style: italic;
+font-weight: bold;
+font-color: #000000;
+}
+
+ .insight2 {
+font-size: 200%;
+font-weight: bold;
+font-color: #000000;
+ }
+
+ .insight3 { 
+font-size: 20px; 
+font-weight: bold;
+margin-right: 30px;
+margin-left: 50px;
+font-color: #000000;
+}
+
+.black { 
+background-color: #000000
+height: 20px;
+width: 100%
+ }
