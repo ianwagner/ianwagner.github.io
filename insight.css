@@ -1,6 +1,6 @@
 * { 
 font-family: Helvetica, Arial, Sans-Serif;
-color: #000000;
+color: #ffffff;
 margin: 0px;
 }
 
@@ -54,7 +54,7 @@ color: #74767a;
 .dropdown-content a {
     color: black;
     padding: 20px;
- font-size: 30px;
+ font-size: 25px;
 font-weight: bold;
     text-decoration: none;
     display: block;
@@ -71,7 +71,9 @@ font-weight: bold;
 }
 
  .insight { 
-font-size: 45px; 
+    padding-left: 20px;
+font-size: 30px; 
+font-color: #ffffff;
 font-weight: bold;
 }
 
