@@ -12,11 +12,11 @@ a:link, a:visited {
  }
 
 a:hover, a:active {
-color: #98FF11;
+color: #f9f9f9;
 }
 
 #gradient {
-    height: 100%;
+height: 100%;
 background: #b9ff5e; /* For browsers that do not support gradients */
 background: -webkit-linear-gradient(#b9ff5e, #ffffff); /* For Safari 5.1 to 6.0 */
 background: -o-linear-gradient(#b9ff5e, #ffffff); /* For Opera 11.1 to 12.0 */
@@ -28,30 +28,30 @@ background: linear-gradient(#b9ff5e, #ffffff); /* Standard syntax */
 @media (max-width: 767px) { 
 .phoneName { 
 float: right;
-padding-right: 10px;
-padding-top: 7px;
-font-size: 30px; 
-font-color: #ffffff;
+text-align: right;
+padding-right: 10%;
+padding-top:;
+font-size: 80px; 
+color: #000000;
 font-weight: bold;
 }
 .phoneHeader{
 width: 100%;
-background-color: #000000;
 height: 50px;
 }
 .dropbtn {
-background-color: #000000;
+background-color: #ffffff;
 width: 50px;
 height: 50px;
 padding: 0px;
 font-size: 35px;
 border: none;
-color: #ffffff;
+color: #FFAC00;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-background-color: #74767a;
-color: #98FF11;
+background-color: #000000;
+color: #5EB9FF;
 }
 
 .dropdown {
@@ -78,7 +78,7 @@ display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #98FF11}
+.dropdown-content a:hover {background-color: #ffffff}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -87,9 +87,9 @@ display: block;
 /* desktop */
 @media (min-width: 768px) { 
 .desktopName { 
-padding-left: 15%;
+padding-left: 10%;
 font-size: 55px; 
-font-color: #ffffff;
+font-color: #000000;
 font-weight: bold;
 }
 .desktopHeader{
