@@ -41,6 +41,7 @@ background: linear-gradient(#b9ff5e, #ffffff); /* Standard syntax */
 
 /* phone */
 @media (max-width: 767px) { 
+
 .phoneName { 
 float: right;
 text-align: right;
@@ -57,6 +58,7 @@ height: 50px;
  position: relative;
  width: 100%;
  height: 100%
+
 
  }
 .dropbtn {
