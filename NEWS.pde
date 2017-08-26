@@ -70,9 +70,11 @@ fill(255);
 triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
 triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
   
+    targetX = mouseX;
+    targetY = mouseY;
+    
+  
   if (atRest == true) { 
-    targetX = random(width);
-    targetY = random(height);
     
     left = -25; 
     right = 25; 
@@ -108,7 +110,7 @@ triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
   }
   }
 
-if (dist(posX, posY, mouseX, mouseY) < 50) { 
+if (dist(posX, posY, mouseX, mouseY) > 50) { 
   flying = true; 
   atRest = false; 
 } else if (dist(targetX, targetY, posX, posY) < 10) { 
