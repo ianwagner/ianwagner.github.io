@@ -60,18 +60,18 @@ height: 50px;
 
  }
 .dropbtn {
-background-color: #ffffff;
+background-color: #000000;
 width: 50px;
 height: 50px;
 padding: 0px;
 font-size: 35px;
 border: none;
-color: #FFAC00;
+color: #3399ff;
 }
 
 .dropbtn:hover, .dropbtn:focus {
 background-color: #000000;
-color: #5EB9FF;
+color: #fff700;
 }
 
 .dropdown {

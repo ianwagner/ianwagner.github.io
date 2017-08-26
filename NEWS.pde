@@ -5,6 +5,9 @@ boolean atRest = true;
 float cageX;
 float cageY;
 
+float paintX = width/2-60;
+float paintY = height/2+30;
+
 float posX; 
 float posY;
 
@@ -23,8 +26,14 @@ color c1, c2;
 
 PImage paint;
 
+int dice =int(random(1,3));
+
 void setup() {
   size(375, 509);
+  
+  if (dice ==2){ 
+      background(0);
+  }
   
   paint = loadImage("paintBlob2.png");
   
@@ -38,6 +47,7 @@ void setup() {
 
 void draw() {
   
+  if (dice == 1){
   c1 = color(0);
   c2 = color(147, 203, 255);
  
@@ -54,12 +64,6 @@ void draw() {
     strokeWeight(1);
     line(0, i, width, i);
   }
-  
-     noStroke();
-     fill(255, 0, 150, 50);
-     ellipse(cageX, cageY, 400, 400);
-     
-     //image(paint, -50, -50);
  
 noStroke();
 fill(255); 
@@ -114,11 +118,32 @@ if (dist(posX, posY, mouseX, mouseY) < 50) {
 
 }
 
+
+if (dice == 2) {
+
+     //ellipse(cageX, cageY, 400, 400);
+     
+     image(paint, paintX, paintY);
+}
+
+if (dice == 3) {
+
+     ellipse(cageX, cageY, 400, 400);
+     
+}
+
+}
+
 void mouseDragged(){
   
   if(dist(mouseX, mouseY, cageX, cageY) <200){
   cageX = mouseX;
   cageY = mouseY;
+  }
+  
+    if(dist(mouseX, mouseY, paintX, paintY) <400){
+  paintX = mouseX-200;
+  paintY = mouseY-200;
   }
   
 }
