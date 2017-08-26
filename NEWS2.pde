@@ -7,8 +7,8 @@ boolean atRest = true;
 float cageX;
 float cageY;
 
-float paintX = width/2-35;
-float paintY = height/2+50;
+float paintX = width/2-20;
+float paintY = height/2+80;
 
 float posX = random(100,275); 
 float posY = random(100,400);
@@ -31,7 +31,7 @@ PImage paint;
 int dice = int(random(1,3));
 
 void setup() {
-  size(414, 628);
+  size(414, 578);
   
   if (dice ==2){ 
       background(0);

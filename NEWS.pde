@@ -5,7 +5,7 @@ boolean atRest = true;
 float cageX;
 float cageY;
 
-float paintX = width/2-60;
+float paintX = width/2-40;
 float paintY = height/2+30;
 
 float posX; 
