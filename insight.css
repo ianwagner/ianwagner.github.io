@@ -24,21 +24,41 @@ background: -moz-linear-gradient(#b9ff5e, #ffffff); /* For Firefox 3.6 to 15 */
 background: linear-gradient(#b9ff5e, #ffffff); /* Standard syntax */
 }
 
+#gradient2 {
+height: 100%;
+background: #b9ff5e; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#b9ff5e, #ffffff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#b9ff5e, #ffffff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#b9ff5e, #ffffff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#b9ff5e, #ffffff); /* Standard syntax */
+}
+
+#black {
+
+	background: #000000;
+}
+
+
 /* phone */
 @media (max-width: 767px) { 
 .phoneName { 
 float: right;
 text-align: right;
-padding-right: 10%;
-padding-top:;
-font-size: 80px; 
-color: #000000;
+font-size: 40px; 
+color: #ffffff;
 font-weight: bold;
 }
 .phoneHeader{
 width: 100%;
 height: 50px;
 }
+
+.butterfly { 
+ position: relative;
+ width: 100%;
+ height: 100%
+
+ }
 .dropbtn {
 background-color: #ffffff;
 width: 50px;
@@ -65,6 +85,7 @@ display: none;
 position: absolute;
 background-color: #f9f9f9;
 width: 200px;
+z-index: +1;
 }
 
 /* Links inside the dropdown */
