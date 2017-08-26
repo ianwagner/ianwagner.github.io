@@ -24,7 +24,7 @@ color c1, c2;
 PImage paint;
 
 void setup() {
-  size(375, 617);
+  size(375, 509);
   
   paint = loadImage("paintBlob2.png");
   
@@ -38,31 +38,28 @@ void setup() {
 
 void draw() {
   
-  c1 = color(165, 240, 4);
-  c2 = color(253, 220, 0);
+  c1 = color(0);
+  c2 = color(147, 203, 255);
  
   
   setGradient(0, 0, width, height, c1, c2, 1);
 
-  pushMatrix();
-  rotate(.5);
-  for (int i = 0; i<width+400; i = i + (width/11)){
+  for (int i = 20; i<width; i = i + (width/11)){
     stroke(0);
     strokeWeight(1);
-    line(i, -400, i, height);
+    line(i, 0, i, height);
   }
-  for (int i = -200; i<height-75; i = i + (width/11)){
+  for (int i = 15; i<height; i = i + (width/11)){
     stroke(0);
     strokeWeight(1);
-    line(0, i, width+266, i);
+    line(0, i, width, i);
   }
-  popMatrix();
   
      noStroke();
-     fill(0, 150);
+     fill(255, 0, 150, 50);
      ellipse(cageX, cageY, 400, 400);
      
-     image(paint, -50, -50);
+     //image(paint, -50, -50);
  
 noStroke();
 fill(255); 
