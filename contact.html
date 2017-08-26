@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html class = "otherBG">
-<link rel="stylesheet" href="style.css">
+<html id = "gradient2">
+<link rel="stylesheet" href="insight.css">
 <script type="text/javascript" src="processing.js"></script>
 <head>
 	
@@ -19,32 +19,50 @@
 </head>
 <body>
 
-<div class="col-dt-4 col-ta-5 col-ph-1">
-<p></p>
-<p></p>
+<div class='phoneHeader desktopHeader'>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">&#9776;
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="home.html">
+work
+    </a>
+    <a href="bio.html">
+bio
+    </a>
+    <a href="index.html">
+home
+    </a>
+  </div>
 </div>
 
-<div class="col-dt-1 col-ta-1 col-ph-1">
-<p></p>
-</div>
-
-<div class="col-dt-2 col-ta-3 col-ph-3">
-<h1 class="bigarrow">
-	<a href="index.html">
-	&#10094;
-</h1>
+<a class ='phoneName desktopName'>contact
 </a>
-<h1 class="title">contact</h1>
-<h3><a href="mailto:imzish@gmail.com">imzish@gmail.com</a></h3>
 </div>
-
-<div class="butterfly">
-<canvas data-processing-sources="butterfly.pde"></canvas>
-</div>
-
-<div class="col-dt-3 col-ta-3 col-ph-3">
-<footer>ian wagner &copy. All rights reserved ian wagner 2017.</footer>
+<a class ="phoneContact desktopContact" href="mailto:imzish@gmail.com">imzish@gmail.com</a>
 </div>
 
 </body>
+
+<script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 </html>

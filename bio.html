@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html class = "otherBG">
-<link rel="stylesheet" href="style.css">
+<html id = "gradient2">
+<link rel="stylesheet" href="insight.css">
 <head>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -18,38 +18,53 @@
 </head>
 <body>
 
-<div class="col-dt-4 col-ta-5 col-ph-1">
-<p></p>
-<p></p>
+<div class='phoneHeader desktopHeader'>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">&#9776;
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="home.html">
+work
+    </a>
+    <a href="index.html">
+home
+    </a>
+    <a href="contact.html">
+contact
+    </a>
+  </div>
 </div>
 
-<div class="col-dt-1 col-ta-1 col-ph-1">
-<p></p>
-</div>
-
-<div class="col-dt-5 col-ta-7 col-ph-3">
-<h1 class="bigarrow">
-	<a href="index.html">
-	&#10094;
-</h1>
+<a class ='phoneName desktopName'>bio
 </a>
-<h1 class="title">bio</h1>
-</div>
 
-<div class="col-dt-6 col-ta-8 col-ph-1">
-<p></p>
-</div>
-
-<div class="col-dt-8 col-ta-6 col-ph-3 small big bigger landscape">
-<p class="info">Ian is a freelance designer and a BFA student at the University of Denver specializing in digital art/design. In the past, 
+<a class="info">Ian is a freelance designer and a BFA student at the University of Denver specializing in digital art/design. In the past, 
 	Ian has worked as a graphic designer for various businesses in Portland OR 
 	and as the assistant to the artistic director of Render quarterly. 
-	</p>
-</div>
-
-<div class="col-dt-3 col-ta-3 col-ph-3">
-<footer>ian wagner &copy. All rights reserved ian wagner 2017.</footer>
-</div>
+	</a>
 	
 </body>
+
+
+<script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 </html>

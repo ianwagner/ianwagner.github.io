@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html class = "otherBG">
-<link rel="stylesheet" href="style.css">
+<html id="gradient2">
+<link rel="stylesheet" href="insight.css">
 <head>
   
   <script>
@@ -20,66 +20,62 @@
 </head>
 <body>
 
-<div class="col-dt-4 col-ta-5 col-ph-1">
-<p></p>
-<p></p>
+<div class='phoneHeader desktopHeader'>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">&#9776;
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">
+home
+    </a>
+    <a href="bio.html">
+bio
+    </a>
+    <a href="contact.html">
+contact
+    </a>
+  </div>
 </div>
 
-<div class="col-dt-1 col-ta-1 col-ph-1">
-<p></p>
-</div>
-
-<div class="col-dt-5 col-ta-7 col-ph-3">
-<h1 class="bigarrow">
-  <a href="index.html">
-  &#10094;
-</h1>
+<a class ='phoneName desktopName'>work
 </a>
-<h1 class="title">work</h1>
 </div>
 
-<div class="col-dt-7 col-ta-5 col-ph-4 small big bigger landscape">
-
-<div class="col-dt-9 col-ta-8 col-ph-4">
-
-<h2>fabrication</h2>
-  <ul class="underline">
+    <ul class = "phoneWork desktopWork">
     <li><a href="greygoo.html">grey goo</a></li>
     <li><a href="liquidTech.html">liquid tech</a></li>
     <li><a href="shoji.html">electric shoji</a></li>
     <li><a href="asterisk.html">asterisk</a></li>
-  </ul>
-
-<h2>3D</h2>
-  <ul class="underline">
     <li><a href="grocery.html">grocery</a></li>
     <li><a href="house.html">wax house</a></li>
     <li><a href="greecian.html">grecian pool</a></li>
-  </ul>
-
-</div>
-
-<div class="col-dt-9 col-ta-8 col-ph-4">
-<h2>2D</h2>
-  <ul class="underline">
     <li><a href="icon.html">logos</a></li>
     <li><a href="illustration.html">illustrations</a></li>
     <li><a href="glitch.html">glitch</a></li>
-  </ul>
-  </ul>
+    </ul>
 
-  <h2>photography</h2>
-  <ul class="underline">
-    <li><a href="memory.html">memory series</a></li>
-  </ul>
-
-</div>
-</div>
-
-
-<div class="col-dt-3 col-ta-3 col-ph-3">
-<footer>ian wagner &copy. All rights reserved ian wagner 2017.</footer>
-</div>
 
 </body>
+
+<script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 </html>

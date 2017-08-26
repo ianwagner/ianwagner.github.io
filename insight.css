@@ -1,12 +1,13 @@
 * { 
 font-family: Helvetica, Arial, Sans-Serif;
-color: #ffffff;
 margin: 0px;
+color: #000000;
 }
 
 body ul{ 
 list-style: none;
  }
+
 a:link, a:visited { 
  text-decoration: none;
  }
@@ -18,33 +19,65 @@ color: #f9f9f9;
 #gradient {
 height: 100%;
 background: #b9ff5e; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(#b9ff5e, #ffffff); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#b9ff5e, #ffffff); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#b9ff5e, #ffffff); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#b9ff5e, #ffffff); /* Standard syntax */
+background: -webkit-linear-gradient(#b9ff5e, #000000); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#b9ff5e, #000000); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#b9ff5e, #000000); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#b9ff5e, #000000); /* Standard syntax */
 }
 
 #gradient2 {
 height: 100%;
-background: #b9ff5e; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(#b9ff5e, #ffffff); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#b9ff5e, #ffffff); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#b9ff5e, #ffffff); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#b9ff5e, #ffffff); /* Standard syntax */
+background: #9B30FF; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#9B30FF, #ffffff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#9B30FF, #ffffff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#9B30FF, #ffffff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#9B30FF, #ffffff); /* Standard syntax */
 }
 
 #black {
-
 	background: #000000;
+}
+
+#white {
+	background: #f9f9f9;
 }
 
 
 /* phone */
 @media (max-width: 767px) { 
 
+.info {
+float: left;
+text-align: left;
+padding-left: 20px;
+padding-top: 20px;
+font-size: 35px; 
+font-weight: bold;	
+}
+
+.phoneContact{
+float: left;
+text-align: left;
+padding-top: 20px;
+padding-left: 15px;
+font-size: 40px; 
+font-weight: bold;	
+}
+
+.phoneWork {
+float: left;
+text-align: left;
+padding-left: 20px;
+font-size: 40px; 
+font-weight: bold;
+}
+
+.canvas {display: block;}	
+
 .phoneName { 
 float: right;
 text-align: right;
+padding-right: 10px;
 font-size: 40px; 
 color: #ffffff;
 font-weight: bold;
@@ -52,15 +85,9 @@ font-weight: bold;
 .phoneHeader{
 width: 100%;
 height: 50px;
+background-color: #000000;
 }
 
-.butterfly { 
- position: relative;
- width: 100%;
- height: 100%
-
-
- }
 .dropbtn {
 background-color: #000000;
 width: 50px;
@@ -68,7 +95,7 @@ height: 50px;
 padding: 0px;
 font-size: 35px;
 border: none;
-color: #3399ff;
+color: #9B30FF;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -107,12 +134,68 @@ display: block;
 .show {display:block;}
 }
 
+@media (max-width: 375px) { 
+.canvasPlus {display: none !important;}	
+}
+
+@media (min-width: 376px) { 
+.canvas {display: none !important;}	
+}
+
+@media (min-width: 415px) {
+.canvasPlus {display: none !important;}	
+}
+
 /* desktop */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+
+.info {
+	padding-right: 50%;
+	padding-left: 10%;
+	padding-top: 50px;
+display: block;
+float: center;
+text-align: left;
+font-size: 20px; 
+font-weight: bold;
+
+}
+
+a:hover, a:active {
+color: #ffffff;
+}
+
+ul { 
+padding: 0;
+list-style-type: circle !important;
+ }
+
+ li { 
+display: inline-flex;
+padding-left: 15px;
+padding-right: 15px;
+ }
+
+.desktopContact {
+display: inline-flex;
+padding: 10%;
+text-align: center;
+font-size: 60px; 
+font-weight: bold;
+}
+
+.desktopWork {
+padding: 10%;
+text-align: center;
+font-size: 60px; 
+font-weight: bold;
+
+}
+
 .desktopName { 
 padding-left: 10%;
 font-size: 55px; 
-font-color: #000000;
+color: #ffffff;
 font-weight: bold;
 }
 .desktopHeader{
@@ -135,6 +218,7 @@ padding-top: 20px;
 
 /* Links inside the dropdown */
 .dropdown-content a {
+color: #ffffff;
 padding-right: 20px;
 font-size: 25px;
 font-weight: bold;
@@ -143,7 +227,8 @@ display: inline-block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {color: #98FF11}
+.dropdown-content a:hover {
+	color: #9B30FF;}
 
 }
 }
