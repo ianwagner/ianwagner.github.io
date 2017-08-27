@@ -53,17 +53,6 @@ void draw() {
  
   
   setGradient(0, 0, width, height, c1, c2, 1);
-
-  for (int i = 20; i<width; i = i + (width/11)){
-    stroke(0);
-    strokeWeight(1);
-    line(i, 0, i, height);
-  }
-  for (int i = 15; i<height; i = i + (width/11)){
-    stroke(0);
-    strokeWeight(1);
-    line(0, i, width, i);
-  }
  
 noStroke();
 fill(255); 

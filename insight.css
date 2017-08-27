@@ -27,11 +27,11 @@ background: linear-gradient(#b9ff5e, #000000); /* Standard syntax */
 
 #gradient2 {
 height: 100%;
-background: #9B30FF; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(#9B30FF, #ffffff); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#9B30FF, #ffffff); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#9B30FF, #ffffff); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#9B30FF, #ffffff); /* Standard syntax */
+background: #9EFF53; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#9EFF53, #ffffff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#9EFF53, #ffffff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#9EFF53, #ffffff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#9EFF53, #ffffff); /* Standard syntax */
 }
 
 #black {
@@ -95,12 +95,12 @@ height: 50px;
 padding: 0px;
 font-size: 35px;
 border: none;
-color: #9B30FF;
+color: #ffffff;
 }
 
 .dropbtn:hover, .dropbtn:focus {
 background-color: #000000;
-color: #fff700;
+color: #9EFF53;
 }
 
 .dropdown {
@@ -228,7 +228,7 @@ display: inline-block;
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-	color: #9B30FF;}
+	color: #9EFF53;}
 
 }
 }
