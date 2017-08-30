@@ -31,20 +31,37 @@ background: #B1ACB7; /* For browsers that do not support gradients */
 background: -webkit-linear-gradient(#B1ACB7, #ffffff); /* For Safari 5.1 to 6.0 */
 background: -o-linear-gradient(#B1ACB7, #ffffff); /* For Opera 11.1 to 12.0 */
 background: -moz-linear-gradient(#B1ACB7, #ffffff); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#ACB7B7, #ffffff); /* Standard syntax */
+background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
 }
 
 #black {
 	background: #000000;
 }
 
+#grey {
+	background: #B1ACB7;
+}
+
 #white {
-	background: #f9f9f9;
+	background: #ffffff;
 }
 
 
 /* phone */
 @media (max-width: 767px) { 
+
+footer { 
+font-size: 12px;
+color: #ffffff;
+position: fixed; 
+bottom: 10px;
+padding-left: 10px; 
+text-align: right;
+}
+
+.art { 
+width: 100%;
+ }
 
 .info {
 float: left;
@@ -54,6 +71,17 @@ padding-right: 20px;
 padding-top: 20px;
 font-size: 25px; 
 font-weight: bold;	
+}
+
+.descriptions { 
+float: left;
+text-align: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+font-size: 25px; 
+font-weight: bold;	
+color: #ffffff;
 }
 
 .phoneContact{
@@ -88,6 +116,27 @@ font-weight: bold;
 width: 100%;
 height: 50px;
 background-color: #000000;
+}
+
+.backbtn {
+background-color: #ffffff;
+width: 50px;
+height: 50px;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #000000;
+}
+
+.scrollbtn {
+background-color: #000000;
+width: 50px;
+height: 50px;
+float: right;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #ffffff;
 }
 
 .dropbtn {
@@ -152,15 +201,54 @@ display: block;
 @media (min-width: 768px) {
 
 .info {
-	padding-right: 50%;
-	padding-left: 10%;
-	padding-top: 50px;
+padding-right: 50%;
+padding-left: 10%;
+padding-top: 50px;
 display: block;
 float: center;
 text-align: left;
 font-size: 20px; 
 font-weight: bold;
+}
 
+.art { 
+
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+ }
+
+ .art2 { 
+
+    margin: auto;
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+ }
+
+
+.descriptions {
+
+padding-right: 50%;
+padding-left: 10%;
+padding-top: 0px;
+display: block;
+float: center;
+text-align: left;
+font-size: 20px; 
+font-weight: bold;
+color: #ffffff;
+
+}
+
+footer { 
+font-size: 12px;
+color: #ffffff;
+position: fixed; 
+bottom: 10px;
+padding-left: 10px; 
+text-align: right;
 }
 
 a:hover, a:active {
@@ -207,6 +295,25 @@ height: 70px;
 }
 .dropbtn {
 display: none;
+}
+.backbtn {
+background-color: #ffffff;
+width: 50px;
+height: 50px;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #000000;
+}
+.scrollbtn {
+background-color: #000000;
+float: right;
+width: 50px;
+height: 50px;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #ffffff;
 }
 
 /* Dropdown Content (Hidden by Default) */
