@@ -1,5 +1,7 @@
 pot P = new pot(375/2, 650/2);
 
+float red, green, blue;
+
 float time = millis(); 
 boolean flying = false; 
 boolean atRest = true; 
@@ -28,7 +30,9 @@ color c1, c2;
 
 PImage paint;
 
-int dice = int(random(1,3));
+int dice = 1;
+
+boolean rUp, gUp, bUp; 
 
 void setup() {
   size(414, 578);
@@ -45,16 +49,48 @@ void setup() {
   posX= cageX;
   posY= cageY;
   
+  red = 0;
+  green = 100;
+  blue = 200;
+  
 }
 
 void draw() {
   
+    if (red == 0){ 
+    rUp = true;
+  } else if ( red == 200) { rUp = false;
+  }
+  
+  if (rUp == true){
+    red = red + .5;
+  } else { red = red - .5;}
+  
+  if (green == 0){ 
+    gUp = true;
+  } else if ( green == 200) { gUp = false;
+  }
+  
+  if (gUp == true){
+    green = green + .5;
+  } else { green = green - .5;}
+  
+    if (blue == 0){ 
+    bUp = true;
+  } else if ( blue == 200) { bUp = false;
+  }
+  
+  if (bUp == true){
+    blue = blue + .5;
+  } else { blue = blue - .5;}
+  
   if (dice == 1){
+    
   c1 = color(0);
-  c2 = color(185, 237, 143);
+  c2 = color(red, green, blue);
  
   
-  setGradient(0, 0, width, height, c1, c2, 1);
+setGradient(0, 0, width, height, c1, c2, 1);
  
 noStroke();
 fill(255); 

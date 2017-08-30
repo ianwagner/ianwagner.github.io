@@ -16,7 +16,7 @@ a:hover, a:active {
 color: #f9f9f9;
 }
 
-#gradient {
+//#gradient {
 height: 100%;
 background: #b9ff5e; /* For browsers that do not support gradients */
 background: -webkit-linear-gradient(#b9ff5e, #000000); /* For Safari 5.1 to 6.0 */
@@ -27,11 +27,11 @@ background: linear-gradient(#b9ff5e, #000000); /* Standard syntax */
 
 #gradient2 {
 height: 100%;
-background: #9EFF53; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(#9EFF53, #ffffff); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#9EFF53, #ffffff); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#9EFF53, #ffffff); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#9EFF53, #ffffff); /* Standard syntax */
+background: #B1ACB7; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#B1ACB7, #ffffff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#B1ACB7, #ffffff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#B1ACB7, #ffffff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#ACB7B7, #ffffff); /* Standard syntax */
 }
 
 #black {
@@ -50,6 +50,7 @@ background: linear-gradient(#9EFF53, #ffffff); /* Standard syntax */
 float: left;
 text-align: left;
 padding-left: 20px;
+padding-right: 20px;
 padding-top: 20px;
 font-size: 25px; 
 font-weight: bold;	
@@ -59,14 +60,15 @@ font-weight: bold;
 float: left;
 text-align: left;
 padding-top: 20px;
-padding-left: 15px;
-font-size: 40px; 
+padding-left: 20px;
+font-size: 30px; 
 font-weight: bold;	
 }
 
 .phoneWork {
 float: left;
 text-align: left;
+padding-top: 10px;
 padding-left: 20px;
 font-size: 40px; 
 font-weight: bold;
@@ -89,18 +91,18 @@ background-color: #000000;
 }
 
 .dropbtn {
-background-color: #000000;
+background-color: #ffffff;
 width: 50px;
 height: 50px;
 padding: 0px;
 font-size: 35px;
 border: none;
-color: #ffffff;
+color: #000000;
 }
 
 .dropbtn:hover, .dropbtn:focus {
 background-color: #000000;
-color: #9EFF53;
+color: #ffffff;
 }
 
 .dropdown {
