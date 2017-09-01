@@ -133,16 +133,16 @@ void mouseDragged(){
   flying = true; 
   atRest = false; 
   mClicked = false;
-} else if ((dist(targetX, targetY, posX, posY) < 5)&&(mClicked ==false)) { 
+} else if (dist(targetX, targetY, posX, posY) < 5) { 
   flying = false; 
   atRest = true; 
-} 
+}
 }
 
 
 void mouseClicked(){
   
-  if (dist(posX, posY, mouseX, mouseY) < 30) { 
+  if (dist(posX, posY, mouseX, mouseY) < 5) { 
   mClicked = true;
   flying = true; 
   atRest = false;
