@@ -2,6 +2,7 @@
 font-family: Helvetica, Arial, Sans-Serif;
 margin: 0px;
 color: #000000;
+box-sizing: border-box;
 }
 
 body ul{ 
@@ -14,15 +15,6 @@ a:link, a:visited {
 
 a:hover, a:active {
 color: #f9f9f9;
-}
-
-//#gradient {
-height: 100%;
-background: #b9ff5e; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(#b9ff5e, #000000); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#b9ff5e, #000000); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#b9ff5e, #000000); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#b9ff5e, #000000); /* Standard syntax */
 }
 
 #gradient2 {
@@ -46,65 +38,20 @@ background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
 	background: #ffffff;
 }
 
+/* 
 
-/* phone */
+  PHONE 
+
+*/
+
 @media (max-width: 767px) { 
 
+/* home page canvas */
+
 .canvasDesktop {display: none !important;}
+.canvas {display: block;}   
 
-footer { 
-font-size: 12px;
-color: #ffffff;
-position: fixed; 
-bottom: 10px;
-padding-left: 10px; 
-text-align: right;
-}
-
-.art { 
-width: 100%;
- }
-
-.info {
-float: left;
-text-align: left;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 20px;
-font-size: 25px; 
-font-weight: bold;	
-}
-
-.descriptions { 
-float: left;
-text-align: left;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 20px;
-font-size: 25px; 
-font-weight: bold;	
-color: #ffffff;
-}
-
-.phoneContact{
-float: left;
-text-align: left;
-padding-top: 20px;
-padding-left: 20px;
-font-size: 30px; 
-font-weight: bold;	
-}
-
-.phoneWork {
-float: left;
-text-align: left;
-padding-top: 10px;
-padding-left: 20px;
-font-size: 40px; 
-font-weight: bold;
-}
-
-.canvas {display: block;}	
+/* phone home page */
 
 .phoneName { 
 float: right;
@@ -119,6 +66,44 @@ width: 100%;
 height: 50px;
 background-color: #000000;
 }
+
+/* phone work, contact, and bio */
+
+.phoneContact{
+float: left;
+text-align: left;
+padding-top: 20px;
+padding-left: 20px;
+font-size: 30px; 
+font-weight: bold;  
+}
+
+.art { 
+width: 100%;
+ }
+
+.info {
+float: left;
+text-align: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+font-size: 25px; 
+font-weight: bold;  
+}
+
+.descriptions { 
+float: left;
+text-align: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+font-size: 25px; 
+font-weight: bold;  
+color: #ffffff;
+}
+
+/* buttons for navigation */
 
 .backbtn {
 background-color: #ffffff;
@@ -140,6 +125,8 @@ font-size: 35px;
 border: none;
 color: #ffffff;
 }
+
+/* drop down menu */
 
 .dropbtn {
 background-color: #ffffff;
@@ -183,9 +170,20 @@ display: block;
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ffffff}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu w/ js */
 .show {display:block;}
+
+footer { 
+font-size: 12px;
+color: #ffffff;
+position: fixed; 
+bottom: 10px;
+padding-left: 10px; 
+text-align: right;
 }
+}
+
+/* home page canvas control */
 
 @media (max-width: 375px) { 
 .canvasPlus {display: none !important;}	
@@ -196,22 +194,105 @@ display: block;
 }
 
 @media (min-width: 415px) {
-.canvasPlus {display: none !important;}	
+.canvasPlus {display: none !important;}
+/* desktop work grid */
+
+.flex-grid { 
+padding-top: 40px;
+margin: auto;
+width: 80%;
+flex-flow: row wrap;
+flex-wrap: wrap;
+flex-direction: row;
+display: flex;
+align-content: center;
+justify-content: space-between;
+}
+
+.col { 
+align-self: center;
+width: 200px;
+margin: auto;
+font-size: 20px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.col img:hover {
+opacity: .6;
+}
+
+.col a:hover {
+color: #B1ACB7;
+}
+
+.image{
+width: 100%;
+}
+
+}
+
+@media (max-width: 415px) {
+
+/* phone work grid */
+
+.flex-grid { 
+flex-flow: row wrap;
+flex-wrap: wrap;
+flex-direction: row;
+display: flex;
+align-content: flex-start;
+justify-content: space-around;
+}
+
+.col { 
+margin: auto;
+width: 50%;
+padding: 2px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.image{
+width: 100%;
+}	
 }
 
 @media (max-width: 500px) {
 .canvasDesktop {display: none !important;
 }	
-
 }
 
-/* desktop */
+/* 
+
+ DESKTOP
+
+ */
 @media (min-width: 768px) {
 
 .canvasDesktop {
 padding: 5%;
 }
 
+/* home page */
+
+.desktopName { 
+padding-left: 10%;
+font-size: 55px; 
+color: #000000;
+font-weight: bold;
+}
+.desktopHeader{
+width: 100%;
+background-color: #ffffff;
+height: 70px;
+}
+
+/* desktop work, contact, and bio */
+
+/* bio */
 .info {
 padding-right: 50%;
 padding-left: 10%;
@@ -223,6 +304,7 @@ font-size: 20px;
 font-weight: bold;
 }
 
+/* work images */
 .art { 
 
     margin: auto;
@@ -239,9 +321,8 @@ font-weight: bold;
     padding-bottom: 10px;
  }
 
-
+/* work descriptions */
 .descriptions {
-
 padding-right: 50%;
 padding-left: 10%;
 padding-top: 0px;
@@ -254,26 +335,6 @@ color: #ffffff;
 
 }
 
-footer { 
-font-size: 12px;
-color: #ffffff;
-position: fixed; 
-bottom: 10px;
-padding-left: 10px; 
-text-align: right;
-}
-
-ul { 
-padding: 0;
-list-style-type: circle !important;
- }
-
- li { 
-display: inline-flex;
-padding-left: 15px;
-padding-right: 15px;
- }
-
 .desktopContact {
 display: inline-flex;
 padding: 10%;
@@ -282,28 +343,14 @@ font-size: 60px;
 font-weight: bold;
 }
 
-.desktopWork {
-padding: 10%;
-text-align: center;
-font-size: 60px; 
-font-weight: bold;
+a { 
+display: inline-block;
+margin-bottom: 10px;
+width: calc(50% -4px);
+ }
 
-}
+/* buttons */
 
-.desktopName { 
-padding-left: 10%;
-font-size: 55px; 
-color: #000000;
-font-weight: bold;
-}
-.desktopHeader{
-width: 100%;
-background-color: #ffffff;
-height: 70px;
-}
-.dropbtn {
-display: none;
-}
 .backbtn {
 background-color: #ffffff;
 width: 50px;
@@ -322,6 +369,12 @@ padding: 0px;
 font-size: 35px;
 border: none;
 color: #ffffff;
+}
+
+/* drop down */
+
+.dropbtn {
+display: none;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -347,6 +400,15 @@ display: inline-block;
 .dropdown-content a:hover {
 	color: #B1ACB7;}
 
+}
+
+footer { 
+font-size: 12px;
+color: #ffffff;
+position: fixed; 
+bottom: 10px;
+padding-left: 10px; 
+text-align: right;
 }
 }
 
