@@ -1,14 +1,14 @@
- float red, green, blue;
+float red, green, blue;
+
+float cageX;
+float cageY;
 
 float time = millis(); 
 boolean flying = false; 
 boolean atRest = true; 
 
-float cageX;
-float cageY;
-
-float posX = random(100,275); 
-float posY = random(100,400);
+float posX;
+float posY;
 
 float velX; 
 float velY; 
@@ -28,8 +28,16 @@ boolean rUp, gUp, bUp;
 void setup() {
   size(500, 500);
   
+  background(0);
+  
   cageX = 400;
   cageY = 400;
+
+  posX = random(cageX);
+  posY = random(cageY);
+  
+  targetX = random(cageX);
+  targetY = random(cageY);
   
   red = 0;
   green = 100;
@@ -38,8 +46,6 @@ void setup() {
 }
 
 void draw() {
-  
-background(0);
   
   if (red == 0){ 
     rUp = true;
@@ -68,12 +74,11 @@ background(0);
     blue = blue + .5;
   } else { blue = blue - .5;}
     
-  c1 = color(0);
-  c2 = color(red, green, blue);
+c1 = color(0);
+c2 = color(red, green, blue);
+ 
+setGradient(0, 0, cageX, cageY, c1, c2, 1);
 
-
-  setGradient(0, 0, cageX, cageY, c1, c2, 1);
-  
 noFill();
 stroke(255);
 strokeWeight(10);
@@ -83,19 +88,13 @@ line(cageX+7, 5, width-5, cageY/3.5);
 line(cageX+7, cageY+7, height-5, width-5);
 line(cageX/3.5, height-5, width-5, height-5);
 line(width-5, cageX/3.5, width-5, height-5);
-
  
 noStroke();
 fill(255); 
 triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
 triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
   
-    
-  
   if (atRest == true) { 
-    targetX = random(cageX);
-    targetY = random(cageY);
-    
     left = -25; 
     right = 25; 
   }
@@ -104,6 +103,7 @@ triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
     
     velX = targetX; 
     velY = targetY; 
+    
     posX = posX + (velX - posX) * easing; 
     posY = posY + (velY - posY) * easing;
     
@@ -120,11 +120,10 @@ triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
       right = right + 15;
     } 
   
-  if (posX > width || posY > height) { 
+  if (posX > cageX || posY > cageY) { 
     velX = -velX; 
     velY = -velY; 
   } 
-  
   if (posX < 0 || posY < 0) { 
     velX = -velX; 
     velY = -velY; 
@@ -137,6 +136,8 @@ if (dist(posX, posY, mouseX, mouseY) < 50) {
 } else if (dist(targetX, targetY, posX, posY) < 10) { 
   flying = false; 
   atRest = true; 
+  targetX = random(cageX);
+  targetY = random(cageY);
 } 
 }
 
@@ -153,5 +154,3 @@ void setGradient(int x, int y, float w, float h, color c1, color c2, int axis ) 
     }
   }  
 }
-  
-  
