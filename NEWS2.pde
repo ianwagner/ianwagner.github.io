@@ -3,9 +3,6 @@ float red, green, blue;
 float time = millis(); 
 boolean flying = false; 
 boolean atRest = true; 
-boolean mClicked = false;
-
-float runAwayX, runAwayY;
 
 float posX;
 float posY;
@@ -79,17 +76,14 @@ fill(255);
 triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
 triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
 
-if (mClicked == false){
 targetX = mouseX;
 targetY = mouseY;
-}
+    
   
   if (atRest == true) { 
     
     left = -25; 
     right = 25; 
-    runAwayX = random(width);
-    runAwayY = random(height);
   }
     
   if (flying == true){ 
@@ -121,34 +115,14 @@ targetY = mouseY;
     velY = -velY; 
   }
   }
-  if (dist(runAwayX, runAwayY, posX, posY) < 5) {
-  flying = false;
-  atRest = true;
-  mClicked = false;
-  }
-}
 
-void mouseDragged(){
-  if (dist(posX, posY, mouseX, mouseY) > 50) { 
+if (dist(posX, posY, mouseX, mouseY) > 50) { 
   flying = true; 
   atRest = false; 
-  mClicked = false;
-} else if (dist(targetX, targetY, posX, posY) < 5) { 
+} else if (dist(targetX, targetY, posX, posY) < 10) { 
   flying = false; 
   atRest = true; 
 } 
-}
-
-
-void mouseClicked(){
-  
-  if (dist(posX, posY, mouseX, mouseY) < 30) { 
-  mClicked = true;
-  flying = true; 
-  atRest = false;
-  targetX = runAwayX;
-  targetY = runAwayY;
-  }
 }
 
 void setGradient(int x, int y, float w, float h, color c1, color c2, int axis ) {
