@@ -31,7 +31,7 @@ background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
 }
 
 #grey {
-	background: #B1ACB7;
+	background: #f2f2f2;
 }
 
 #white {
@@ -58,13 +58,13 @@ float: right;
 text-align: right;
 padding-right: 10px;
 font-size: 40px; 
-color: #ffffff;
+color: #000000;
 font-weight: bold;
 }
 .phoneHeader{
 width: 100%;
 height: 50px;
-background-color: #000000;
+background-color: #f2f2f2;
 }
 
 /* phone work, contact, and bio */
@@ -230,6 +230,27 @@ color: #B1ACB7;
 
 .image{
 width: 100%;
+}
+
+.colLarge { 
+align-self: center;
+width: 30%;
+height: 60%;
+
+}
+
+.colSmall { 
+align-self: center;
+width: 15%;
+height: 15%;
+
+}
+
+.colMedium { 
+align-self: center;
+width: 30%;
+height: 60%;
+
 }
 
 }

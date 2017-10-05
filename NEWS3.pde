@@ -28,7 +28,7 @@ boolean rUp, gUp, bUp;
 void setup() {
   size(500, 500);
   
-  background(0);
+  background(242,242,242);
   
   cageX = 400;
   cageY = 400;
@@ -74,13 +74,13 @@ void draw() {
     blue = blue + .5;
   } else { blue = blue - .5;}
     
-c1 = color(0);
+c1 = color(242,242,242);
 c2 = color(red, green, blue);
  
 setGradient(0, 0, cageX, cageY, c1, c2, 1);
 
 noFill();
-stroke(255);
+stroke(0);
 strokeWeight(10);
 rect(5, 5, cageX, cageY);
 line(5, cageY+7, cageX/3.5, height-5);
