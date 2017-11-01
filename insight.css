@@ -218,6 +218,7 @@ font-weight: bold;
 padding-bottom: 10px;
 padding-right: 10px;
 padding-left: 10px;
+text-align: center;
 }
 
 .col img:hover {
@@ -274,6 +275,7 @@ width: 50%;
 padding: 2px;
 font-weight: bold;
 font-size: 20px;
+text-align: center;
 }
 
 .image{
@@ -374,18 +376,18 @@ width: calc(50% -4px);
 
 .backbtn {
 background-color: #ffffff;
-width: 50px;
-height: 50px;
+width: 70px;
+height: 70px;
 padding: 0px;
-font-size: 35px;
+font-size: 40px;
 border: none;
 color: #000000;
 }
 .scrollbtn {
 background-color: #000000;
 float: right;
-width: 50px;
-height: 50px;
+width: 70px;
+height: 70px;
 padding: 0px;
 font-size: 35px;
 border: none;
