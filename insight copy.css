@@ -1,0 +1,454 @@
+* { 
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+margin: 0px;
+color: #000000;
+box-sizing: border-box;
+}
+
+body ul{ 
+list-style: none;
+ }
+
+a:link, a:visited { 
+ text-decoration: none;
+ }
+
+a:hover, a:active {
+color: #242424;
+}
+
+#gradient2 {
+height: 100%;
+background: #B1ACB7; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(#B1ACB7, #ffffff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#B1ACB7, #ffffff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#B1ACB7, #ffffff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
+}
+
+#black {
+	background: #000000;
+}
+
+#grey {
+	background: #f2f2f2;
+}
+
+#white {
+	background: #ffffff;
+}
+
+/* 
+
+  PHONE 
+
+*/
+
+@media (max-width: 767px) { 
+
+/* home page canvas */
+
+.canvasDesktop {display: none !important;}
+.canvas {display: block;}   
+
+/* phone home page */
+
+.phoneName { 
+float: right;
+text-align: right;
+padding-right: 10px;
+font-size: 40px; 
+color: #000000;
+font-weight: bold;
+}
+.phoneHeader{
+width: 100%;
+height: 50px;
+background-color: #f2f2f2;
+}
+
+/* phone work, contact, and bio */
+
+.phoneContact{
+float: left;
+text-align: left;
+padding-top: 20px;
+padding-left: 20px;
+font-size: 30px; 
+font-weight: bold;  
+}
+
+.art { 
+width: 100%;
+ }
+
+ .me { 
+width: 200px;
+float: left;
+padding-right: 20px;
+ }
+
+.info {
+float: left;
+text-align: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+font-size: 25px; 
+font-weight: bold;  
+}
+
+.descriptions { 
+float: left;
+text-align: left;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+font-size: 25px; 
+font-weight: bold;  
+color: #ffffff;
+}
+
+/* buttons for navigation */
+
+.backbtn {
+background-color: #ffffff;
+width: 50px;
+height: 50px;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #000000;
+}
+
+.scrollbtn {
+background-color: #000000;
+width: 50px;
+height: 50px;
+float: right;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #ffffff;
+}
+
+/* drop down menu */
+
+.dropbtn {
+background-color: #ffffff;
+width: 50px;
+height: 50px;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #000000;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #000000;
+color: #ffffff;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+width: 200px;
+z-index: +1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 20px;
+font-size: 25px;
+font-weight: bold;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ffffff}
+
+/* Show the dropdown menu w/ js */
+.show {display:block;}
+
+footer { 
+font-size: 12px;
+color: #ffffff;
+position: fixed; 
+bottom: 10px;
+padding-left: 10px; 
+text-align: right;
+}
+}
+
+/* home page canvas control */
+
+@media (max-width: 375px) { 
+.canvasPlus {display: none !important;}	
+}
+
+@media (min-width: 376px) { 
+.canvas {display: none !important;}	
+}
+
+@media (min-width: 415px) {
+.canvasPlus {display: none !important;}
+/* desktop work grid */
+
+.flex-grid { 
+padding-top: 40px;
+margin: auto;
+width: 80%;
+flex-flow: row wrap;
+flex-wrap: wrap;
+flex-direction: row;
+display: flex;
+align-content: center;
+justify-content: space-between;
+}
+
+.col { 
+align-self: center;
+width: 200px;
+margin: auto;
+font-size: 20px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
+text-align: center;
+}
+
+.col img:hover {
+opacity: .6;
+}
+
+.col a:hover {
+color: #B1ACB7;
+}
+
+.image{
+width: 100%;
+}
+
+.colLarge { 
+align-self: center;
+width: 30%;
+height: 60%;
+
+}
+
+.colSmall { 
+align-self: center;
+width: 15%;
+height: 15%;
+
+}
+
+.colMedium { 
+align-self: center;
+width: 30%;
+height: 60%;
+
+}
+
+}
+
+@media (max-width: 415px) {
+
+/* phone work grid */
+
+.flex-grid { 
+flex-flow: row wrap;
+flex-wrap: wrap;
+flex-direction: row;
+display: flex;
+align-content: flex-start;
+justify-content: space-around;
+}
+
+.col { 
+margin: auto;
+width: 50%;
+padding: 2px;
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+}
+
+.image{
+width: 100%;
+}	
+}
+
+@media (max-width: 500px) {
+.canvasDesktop {display: none !important;
+}	
+}
+
+/* 
+
+ DESKTOP
+
+ */
+@media (min-width: 768px) {
+
+.canvasDesktop {
+padding: 0%;
+}
+
+/* home page */
+
+.desktopName { 
+padding-top: 250px;
+padding-left: 10%;
+font-size: 40px; 
+color: #000000;
+font-weight: medium;
+}
+.desktopHeader{
+width: 400px;
+background-color: #f2f2f2;
+height: 100%;
+}
+
+/* desktop work, contact, and bio */
+
+/* bio */
+.info {
+padding-right: 10%;
+padding-left: 10%;
+padding-top: 50px;
+display: block;
+float: center;
+text-align: left;
+font-size: 20px; 
+font-weight: medium;
+}
+
+/* work images */
+.art { 
+
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+ }
+
+ .art2 { 
+
+    margin: auto;
+    width: 40%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+ }
+
+  .me { 
+width: 200px;
+float: left;
+padding-right: 20px;
+ }
+
+/* work descriptions */
+.descriptions {
+padding-right: 50%;
+padding-left: 10%;
+padding-top: 0px;
+display: block;
+float: center;
+text-align: left;
+font-size: 20px; 
+font-weight: medium;
+color: #ffffff;
+
+}
+
+.desktopContact {
+display: inline-flex;
+padding: 10%;
+text-align: center;
+font-size: 60px; 
+font-weight: bold;
+
+}
+
+a { 
+display: inline-block;
+margin-bottom: 10px;
+width: calc(50% -4px);
+ }
+
+/* buttons */
+
+.backbtn {
+background-color: #ffffff;
+width: 70px;
+height: 70px;
+padding: 0px;
+font-size: 40px;
+border: none;
+color: #000000;
+}
+.scrollbtn {
+background-color: #000000;
+float: right;
+width: 70px;
+height: 70px;
+padding: 0px;
+font-size: 35px;
+border: none;
+color: #ffffff;
+}
+
+/* drop down */
+
+.dropbtn {
+display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+color: #ffffff;
+float: left;
+padding-left: 10%;
+padding-top: 20px;
+display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: #000000;
+font-size: 20px;
+font-weight: medium;
+text-decoration: none;
+float: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: #B1ACB7;}
+
+}
+
+footer { 
+font-size: 12px;
+color: #ffffff;
+position: fixed; 
+bottom: 10px;
+padding-left: 10px; 
+text-align: right;
+}
+}
+
+
+
+
+

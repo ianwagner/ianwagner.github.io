@@ -1,65 +1,103 @@
 <!DOCTYPE html>
-<html id = "black">
+<html id="white">
 <link rel="stylesheet" href="insight.css">
 <head>
-
-<script>
+  
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-102254429-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-
+  
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script src="js/script.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ian wagner</title>
 </head>
 <body>
 
-<div class='phoneHeader desktopHeader'>
+  <div class="flex-grid-big">
 
-  <button class="backbtn">
-  <a href="sculpture.html"> 
-  &#10094;</a>
-  </button>
+<div class='colLeft'>
 
-  <button class="scrollbtn" onclick="plusDivs(1)">&#10095;</button>
-  <button class="scrollbtn" onclick="plusDivs(-1)">&#10094;</button>
-
-<div class="art art2">
-  <img class="mySlides" src="images/greygoo1.jpg" style="width:100%">
-  <img class="mySlides" src="images/greygoo2.JPG" style="width:100%">
+<div class="side">
+<a class ='name'>sculpture
+</a>
 </div>
 
-<p class="descriptions">
-grey goo. 2016. 3D print, laser-cut acrylic, electronics.
-</p>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">&#9776;
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <div>
+    <a style="padding-right: 10px;" href="sculpture.html" >
+&#10094;
+    </a>
+    </div>
+    <div>
+    <a href="index.html">
+home
+    </a>
+    </div>
+    <div>
+    <a href="bio.html">
+bio
+    </a>
+  </div>
+  <div>
+    <a href="contact.html">
+contact
+    </a>
+    </div>
+  </div>
+</div>
+</div>
 
-<footer>ian wagner &copy. All rights reserved ian wagner 2017.</footer>
+<div class="workcolRight">
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+<div class="art">
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+<div class="titles">
+  <a>grey goo.</a></div>
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "inline-block";  
-}
-</script>
+<div class="descriptions">
+  <a>2016. 3D print, laser-cut acrylic, electronics.</a></div>
+
+<img src="images/greygoo1.jpg" style="width:100%">
+  <img src="images/greygoo2.JPG" style="width:100%">
+</div>
+
+
+</div>
+    
+<footer>&copy all rights reserved Ian Wagner 2019</footer>
+</div>
+
 
 </body>
+
+<script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 </html>

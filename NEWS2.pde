@@ -66,7 +66,7 @@ void draw() {
     blue = blue + .5;
   } else { blue = blue - .5;}
     
-c1 = color(242, 242, 242);
+c1 = color(249, 249, 249);
 c2 = color(red, green, blue);
  
 setGradient(0, 0, width, height, c1, c2, 1);

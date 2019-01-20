@@ -26,12 +26,12 @@ color c1, c2;
 boolean rUp, gUp, bUp; 
 
 void setup() {
-  size(500, 500);
+  size(100, 100);
   
-  background(242,242,242);
+  background(0,0,0);
   
-  cageX = 400;
-  cageY = 400;
+  cageX = 100;
+  cageY = 100;
 
   posX = random(cageX);
   posY = random(cageY);
@@ -74,25 +74,18 @@ void draw() {
     blue = blue + .5;
   } else { blue = blue - .5;}
     
-c1 = color(242,242,242);
-c2 = color(red, green, blue);
+c1 = color(red, green ,blue);
+c2 = color(0, 0, 0);
  
-setGradient(0, 0, cageX, cageY, c1, c2, 1);
-
-noFill();
-stroke(0);
-strokeWeight(10);
-rect(5, 5, cageX, cageY);
-line(5, cageY+7, cageX/3.5, height-5);
-line(cageX+7, 5, width-5, cageY/3.5);
-line(cageX+7, cageY+7, height-5, width-5);
-line(cageX/3.5, height-5, width-5, height-5);
-line(width-5, cageX/3.5, width-5, height-5);
+setGradient(0, 0, width, height, c1, c2, 1);
+ 
+ fill(0, 150);
+ rect(-10, -10, width+30, height+30);
  
 noStroke();
 fill(255); 
-triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
-triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
+triangle(posX + left, posY - 25, posX, posY,  posX + left, posY + 25); 
+triangle(posX + right, posY - 25, posX, posY, posX + right, posY + 25);
   
   if (atRest == true) { 
     left = -25; 
