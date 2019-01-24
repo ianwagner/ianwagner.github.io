@@ -34,6 +34,10 @@ font-size: 20px;
 font-weight: medium;  
 }
 
+.contact a:hover {
+    color: #ea4e2f;
+}
+
 
 
 body ul{ 
@@ -348,6 +352,7 @@ box-shadow: 10px 10px 30px grey;
 .dropdown-content a {
 color: black;
 padding-left: 15px;
+padding-right: 15px;
 padding-top: 20px;
 padding-bottom: 10px;
 font-size: 20px;
