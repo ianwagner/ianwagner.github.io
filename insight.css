@@ -56,10 +56,10 @@ a:hover, a:active {
 #gradient2 {
 height: 100%;
 background: #B1ACB7; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(#B1ACB7, #ffffff); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#B1ACB7, #ffffff); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#B1ACB7, #ffffff); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
+background: -webkit-linear-gradient(#91A0E4, #ffffff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#91A0E4, #ffffff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#91A0E4, #ffffff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#91A0E4, #ffffff); /* Standard syntax */
 }
 
 #black {
