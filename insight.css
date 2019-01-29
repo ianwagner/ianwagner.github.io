@@ -36,6 +36,10 @@ font-weight: medium;
     color: #ea4e2f;
 }
 
+.name2 {
+width: 200px;
+}
+
 
 
 body ul{ 
@@ -70,6 +74,13 @@ background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
 	background: #ffffff;
 }
 
+#mage {
+    background-image: url("images/cover.JPG");
+    background-size: cover;
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+
 /* 
 
   PHONE 
@@ -88,13 +99,14 @@ background-color: #B1ACB7;
 }
 
 .side {
-padding-left: 20px;
-padding-top: 10px;
+padding-left: 10px;
+padding-top: 3px;
+padding-bottom: 10px;
 }
 
 .h0 { 
 font-family: Arial, Helvetica, sans-serif;
-font-size: 35px; 
+font-size: 30px; 
 padding-left: 20px;
 padding-bottom: 20px;
 color: #000000;
@@ -207,13 +219,13 @@ color: #000000;
 }
 
 .side {
-padding-left: 40px;
+padding-left: 30px;
 }
 
 .colLeft { 
 padding-top: 250px; 
 background-color: #ffffff;
-width: 25%;
+width: 27%;
 align-self: left;
 font-size: 20px;
 font-weight: medium;
@@ -225,7 +237,7 @@ position: fixed;
 
 .colRight {
 padding-top: 200px; 
-padding-left: 25%; 
+padding-left: 27%; 
 width: 100%;
 align-self: right;
 font-size: 20px;
