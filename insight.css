@@ -78,6 +78,7 @@ background: linear-gradient(#B1ACB7, #ffffff); /* Standard syntax */
     background-image: url("images/cover.JPG");
     background-size: cover;
   background-repeat: no-repeat; /* Do not repeat the image */
+height: 100%;
 }
 
 
