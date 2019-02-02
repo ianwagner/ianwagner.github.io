@@ -273,7 +273,7 @@ padding-right: 30px;
 
 .col { 
 align-self: left;
-width: 150px;
+width: 300px;
 font-size: 15px;
 font-weight: medium;
 padding-bottom: 5px;
@@ -411,7 +411,7 @@ padding-left: 20px;
 }
 
 .col { 
-width: 50%;
+width: 100%;
 padding: 2px;
 padding-bottom: 15px;
 font-weight: medium;
