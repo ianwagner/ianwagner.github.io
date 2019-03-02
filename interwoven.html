@@ -16,54 +16,16 @@
 <script src="js/script.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ian wagner</title>
+  <title>interwoven</title>
 </head>
 <body>
 
-  <div class="flex-grid-big">
-
-<div class='colLeft'>
-
-<div class="side">
-<a href="index.html"><img src="images/name.png" style="width:175px"></a>
-</div>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">&#9776;
-  </button>
-  <div id="myDropdown" class="dropdown-content">
-    <div>
-    <a style="padding-right: 10px;" href="sculpture.html" >
-&#10094;
-    </a>
-    </div>
-    <div>
-    <a href="index.html">
-home
-    </a>
-    </div>
-    <div>
-    <a href="bio.html">
-bio
-    </a>
-  </div>
-  <div>
-    <a href="contact.html">
-contact
-    </a>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="workcolRight">
-
 <div class="art">
 
-<div class="titles">
+<div class="h2">
   <a>interwoven.</a></div>
 
-<div class="descriptions">
+<div class="body">
   <a>2018. wood, acrylic, LEDs.</a></div>
 
 <img src="images/weaving.png" style="width:100%">
@@ -81,24 +43,5 @@ contact
 
 </body>
 
-<script type="text/javascript">
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}</script>
+</script>
 </html>
