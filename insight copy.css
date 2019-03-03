@@ -70,11 +70,7 @@ padding-right: 5px;
 @media (min-width: 767px) {
 
 .canvas {
-margin-top: 75px;
-display: block;
-width: 400px;
-height: 400px;
-}
+display: block;}
 
 .art{
 width:50%;
