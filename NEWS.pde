@@ -1,5 +1,8 @@
 float red, green, blue;
 
+float cageX;
+float cageY;
+
 float time = millis(); 
 boolean flying = false; 
 boolean atRest = true; 
@@ -25,29 +28,30 @@ boolean rUp, gUp, bUp;
 void setup() {
   size(400, 400);
   
-  mouseX=int(random(width));
-  mouseY=int(random(height));
+  background(242,242,242);
   
-  posX = random(width);
-  posY = random(height);
+  cageX = 370;
+  cageY = 370;
+
+  posX = random(cageX);
+  posY = random(cageY);
+  
+  targetX = random(cageX);
+  targetY = random(cageY);
+  
   
 }
 
 void draw() {
- 
-  background(#efefef);
+  
+background(#efefef);
  
 noStroke();
-fill(0); 
+fill(#050b1e); 
 triangle(posX + left, posY - 20, posX, posY,  posX + left, posY + 20); 
 triangle(posX + right, posY - 20, posX, posY, posX + right, posY + 20);
-
-targetX = mouseX;
-targetY = mouseY;
-    
   
   if (atRest == true) { 
-    
     left = -25; 
     right = 25; 
   }
@@ -56,6 +60,7 @@ targetY = mouseY;
     
     velX = targetX; 
     velY = targetY; 
+    
     posX = posX + (velX - posX) * easing; 
     posY = posY + (velY - posY) * easing;
     
@@ -72,7 +77,7 @@ targetY = mouseY;
       right = right + 15;
     } 
   
-  if (posX > width || posY > height) { 
+  if (posX > cageX || posY > cageY) { 
     velX = -velX; 
     velY = -velY; 
   } 
@@ -82,12 +87,14 @@ targetY = mouseY;
   }
   }
 
-if (dist(posX, posY, mouseX, mouseY) > 50) { 
+if (dist(posX, posY, mouseX, mouseY) < 50) { 
   flying = true; 
   atRest = false; 
 } else if (dist(targetX, targetY, posX, posY) < 10) { 
   flying = false; 
   atRest = true; 
+  targetX = random(30, cageX);
+  targetY = random(30, cageY);
 } 
 }
 
