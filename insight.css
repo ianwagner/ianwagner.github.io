@@ -2,6 +2,40 @@
     font-family: Optima, sans-serif;
     text-decoration: none;
  }
+.card-container {
+    
+    width: 100%;
+
+}
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-front */
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* .card-back */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
 
 .h1 { 
 font-size: 45px; 
@@ -64,8 +98,12 @@ font-size: 16px;
   box-shadow: 0px 0px 5px #0957C3;
 }
 
+
+.button:hover { .card
+  transform: rotateY(180deg);
+}
+
 .button:hover{
-   box-shadow: 0px 0px 0px #9b9b9b;
 }
 
 .buttonS:hover {
@@ -77,24 +115,6 @@ margin: 14px;
 color: #ffffff; 
 font-weight: bold;
 font-size: 20px;
-}
-
-.link3 { 
-font-size: 16px; 
-color: #F8AD6D;
-line-height: 1.5;
-}
-
-.link4 { 
-font-size: 16px; 
-color: #EF6079;
-line-height: 1.5;
-}
-
-.link5 { 
-font-size: 16px; 
-color: #AF95D3;
-line-height: 1.5;
 }
 
 .social { 
@@ -125,7 +145,6 @@ width: 100%;
 }
 
 .header { 
-padding-top: 17px;
 padding-left: 20px;
 height: 73px;
 margin-right: -6.5%;
@@ -165,20 +184,21 @@ position: fixed;
 border-radius: 20px;
 background-color: #ffffff;
 width: 350px;
+height: 500px;
 align-self: left;
 font-size: 20px;
 font-weight: medium;
 text-align: left;
 box-shadow: 0px 0px 10px #9b9b9b;
-       margin-bottom: 15px;
+margin-bottom: 15px;
+position: relative;
+transform-style: preserve-3d;
+transition: .6s .1s;
 }
 
 .colRight {
 height: 100%;
 width:55%;
-z-index: -1;
-position: absolute;
-right: 0;
 }
 }
 
@@ -196,7 +216,6 @@ border-top-right-radius: 20px;
 margin-right: -20px;
 margin-left: -20px;
 margin-top: -3px;
-padding-top: 17px;
 padding-left: 20px;
 height: 73px;
 background-color: #ffffff;
@@ -216,15 +235,18 @@ background-color: #000000;
 }
 
 .side {
-padding-top: 3px;
+padding-left: 20px;
+padding-right: 20px;
 }
     
-.colLeft { 
-float: left;
+.colLeft {
+    float: left;
 }
     
 .card{ 
 border-radius: 20px;
+height: 500px;
+width: 300px;
 background-color: #ffffff;
 padding-left: 20px;
 padding-right: 20px;
@@ -235,6 +257,8 @@ text-align: left;
 background-color: #ffffff;
 box-shadow: 0px 0px 3px #9b9b9b;
     margin-bottom: 15px;
+transform-style: preserve-3d;
+transition: .6s .1s;
 }
 
 .colRight {
