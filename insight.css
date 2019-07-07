@@ -87,24 +87,6 @@ font-weight: bold;
 font-size: 20px;
 }
 
-.link3 { 
-font-size: 16px; 
-color: #F8AD6D;
-line-height: 1.5;
-}
-
-.link4 { 
-font-size: 16px; 
-color: #EF6079;
-line-height: 1.5;
-}
-
-.link5 { 
-font-size: 16px; 
-color: #AF95D3;
-line-height: 1.5;
-}
-
 .social { 
 height: 25px; 
 padding-right: 5px;
@@ -115,22 +97,6 @@ padding-right: 5px;
 }
 
 @media (min-width: 767px) {
-
-.canvas {
-margin-top: 75px;
-display: block;
-width: 400px;
-height: 400px;
-}
-
-.art{
-width:50%;
-}
-
-
-.image{
-width: 100%;
-}
 
 .header { 
 padding-top: 17px;
@@ -160,14 +126,25 @@ background-color: #050b1e;
 padding-left: 20px;
 padding-right: 20px;
 }
-
-.colLeft { 
-margin-left: 10%;
-margin-top: 70px;
-width: 350px;
-height: 100%;
-position: fixed;
+    
+.col {
+float: left;
 }
+    
+.col2 {
+float: left;
+width: 50%;
+}
+    
+    .row {
+        margin: 80px;
+    }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
     
 .card{ 
 border-radius: 15px;
@@ -178,15 +155,11 @@ font-size: 20px;
 font-weight: medium;
 text-align: left;
 margin-bottom: 15px;
+margin-left: 5px;
+margin-right: 5px;
+padding-bottom: 20px;
 }
-
-.colRight {
-height: 100%;
-width:55%;
-z-index: -1;
-position: absolute;
-right: 0;
-}
+     
 }
 
 @media (max-width: 767px) {
@@ -195,6 +168,7 @@ right: 0;
 
 .art{
 width:100%;
+border-radius: 20px;
 }
 
 .header { 
@@ -225,25 +199,24 @@ background-color: #000000;
 .side {
 padding-top: 3px;
 }
-    
-.colLeft { 
+
+.col {
 float: left;
+width:100%;
 }
-    
+
 .card{ 
 border-radius: 20px;
 background-color: #ffffff;
 padding-left: 20px;
 padding-right: 20px;
+padding-bottom: 20px;
 float: left;
 font-size: 20px;
 font-weight: medium;
 text-align: left;
 background-color: #ffffff;
 margin-bottom: 15px;
-}
-
-.colRight {
 }
 
 }
