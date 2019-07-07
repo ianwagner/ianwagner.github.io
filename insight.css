@@ -42,12 +42,12 @@ line-height: 1;
   cursor : pointer;
   border-radius : 4px;
   display: inline-block;
-  box-shadow: 0px 0px 3px #9b9b9b;
+  box-shadow: 0px 1px 3px #9b9b9b;
     
 }
 
 .clickS{ 
-    margin: 0PX;
+margin: 0PX;
 margin-left: 5px;
 margin-right: 5px;    
 color: #ffffff; 
@@ -70,6 +70,7 @@ font-size: 16px;
 
 .button:hover{
 background : #9ABB91;
+box-shadow: 0px 0px 0px #9b9b9b;
 }
 
 .buttonS:hover {
