@@ -133,17 +133,24 @@ margin-bottom: 10px;
 margin-left: 10px;
 padding: 20px;
 box-shadow: 0px 2px 10px #e8e8e8;
-}  
+}
+    
+.scroll{
+border-radius: 15px;
+height: 175px;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
     
 .card2{ 
 border-radius: 15px;
 background-color: #ffffff;
 width: 175px;
-margin-bottom: 10px;
-margin-left: 10px;
 height: 175px;
-box-shadow: 0px 2px 10px #e8e8e8;
+display: inline-block;
 }
+    
 }
 
 @media (max-width: 767px) {
@@ -177,12 +184,20 @@ padding: 20px;
 box-shadow: 0px 2px 10px #e8e8e8;
 }
     
+.scroll{
+border-radius: 15px;
+height: 175px;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
+    
 .card2{ 
 border-radius: 15px;
 background-color: #ffffff;
-width: 50%;
-margin-bottom: 10px;
-height: 0px;
+width: 175px;
+height: 175px;
+display: inline-block;
 }
 
 }
