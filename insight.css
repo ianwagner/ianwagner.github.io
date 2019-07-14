@@ -143,11 +143,27 @@ overflow-y: hidden;
 white-space: nowrap;
 }
     
+.scrollB{
+border-radius: 15px;
+height: 230px;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
+    
 .card2{ 
 border-radius: 15px;
 background-color: #ffffff;
 width: 175px;
 height: 175px;
+display: inline-block;
+}
+    
+.card3{ 
+border-radius: 15px;
+background-color: #ffffff;
+width: 230px;
+height: 230px;
 display: inline-block;
 }
     
@@ -186,7 +202,15 @@ box-shadow: 0px 2px 10px #e8e8e8;
     
 .scroll{
 border-radius: 15px;
-height:50%;
+height:45%;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
+    
+.scrollB{
+border-radius: 15px;
+height:65%;
 overflow-x: scroll;
 overflow-y: hidden;
 white-space: nowrap;
@@ -195,8 +219,16 @@ white-space: nowrap;
 .card2{ 
 border-radius: 15px;
 background-color: #ffffff;
-width: 50%;
-height:50%;
+width: 45%;
+height:45%;
+display: inline-block;
+}
+    
+.card3{ 
+border-radius: 15px;
+background-color: #ffffff;
+width: 65%;
+height: 65%;
 display: inline-block;
 }
 
