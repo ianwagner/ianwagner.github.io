@@ -1,3 +1,5 @@
+PImage tv;
+
 float red, green, blue;
 
 float cageX;
@@ -26,6 +28,9 @@ color c1, c2;
 boolean rUp, gUp, bUp; 
 
 void setup() {
+  
+tv = loadImage("tv.png");
+
   size(300, 150);
   
   background(0,0,0);
@@ -80,12 +85,15 @@ c2 = color(red, green ,blue);
 setGradient(0, 0, width, height, c1, c2, 1);
  
  fill(#efefef, 190);
- rect(-10, -10, width+30, height+30);
+ noStroke();
+ rect(0, 0, width, height);
  
 noStroke();
 fill(255); 
 triangle(posX + left, posY - 25, posX, posY,  posX + left, posY + 25); 
 triangle(posX + right, posY - 25, posX, posY, posX + right, posY + 25);
+  
+image(tv, 0, 0, 300, 150);
   
   if (atRest == true) { 
     left = -25; 
