@@ -3,6 +3,13 @@
     text-decoration: none;
  }
 
+.canvas {
+border-radius: 15px;
+display: block;
+width: 300px;
+height: 150px;
+}
+
 .h1 { 
 font-size: 45px; 
 color: #000000;
