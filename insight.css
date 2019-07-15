@@ -178,8 +178,6 @@ display: inline-block;
 
 @media (max-width: 767px) {
 
-.canvas {display: none !important;}	 
-
 .footerD { 
 position: absolute;
 top:40px;
