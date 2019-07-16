@@ -31,12 +31,12 @@ void setup() {
   
 tv = loadImage("tv.png");
 
-  size(300, 150);
+  size(100, 100);
   
   background(0,0,0);
   
-  cageX = 300;
-  cageY = 150;
+  cageX = 100;
+  cageY = 100;
 
   posX = random(cageX);
   posY = random(cageY);
@@ -87,13 +87,8 @@ setGradient(0, 0, width, height, c1, c2, 1);
  fill(#efefef, 190);
  noStroke();
  rect(0, 0, width, height);
- 
-noStroke();
-fill(255); 
-triangle(posX + left, posY - 25, posX, posY,  posX + left, posY + 25); 
-triangle(posX + right, posY - 25, posX, posY, posX + right, posY + 25);
   
-image(tv, 0, 0, 300, 150);
+image(tv, 0, 0, 100, 100);
   
   if (atRest == true) { 
     left = -25; 
