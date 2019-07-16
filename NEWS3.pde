@@ -31,7 +31,7 @@ void setup() {
   
 tv = loadImage("tv.png");
 
-  size(100, 100);
+  size(300, 300);
   
   background(0,0,0);
   
@@ -80,15 +80,15 @@ void draw() {
   } else { blue = blue - .5;}
     
 c1 = color(red, green ,blue);
-c2 = color(red, green ,blue);
+c2 = color(blue, red ,green);
  
 setGradient(0, 0, width, height, c1, c2, 1);
  
- fill(#efefef, 190);
+ fill(#efefef, 210);
  noStroke();
  rect(0, 0, width, height);
   
-image(tv, 0, 0, 100, 100);
+image(tv, 0, 0, 300, 300);
   
   if (atRest == true) { 
     left = -25; 
