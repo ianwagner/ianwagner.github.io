@@ -132,6 +132,7 @@ width: 400px;
 .Acol {
 width: 500px;
 float: left;
+margin-left: 5px;
 }
     
 .row {
