@@ -194,12 +194,13 @@ display: inline-grid;
     
 .cardLogo{ 
 border-radius: 15px;
-background-color: #efefef;
-width: 300px;
+background-color: #ffffff;
+width: 100px;
 height: 100px;
 margin-bottom: 10px;
 margin-left: 10px;
 padding: 5px;
+box-shadow: 0px 2px 10px #e8e8e8;
 }
     
 }
@@ -277,10 +278,11 @@ display: inline-block;
     
 .cardLogo{ 
 border-radius: 15px;
-background-color: #efefef;
-width: 300px;
+background-color: #ffffff;
+width: 100px;
 height: 100px;
 margin-bottom: 10px;
 padding: 5px;
+box-shadow: 0px 2px 10px #e8e8e8;
 }
 }

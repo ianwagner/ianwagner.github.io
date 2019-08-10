@@ -31,7 +31,7 @@ void setup() {
   
 tv = loadImage("tv.png");
 
-  size(900, 300);
+  size(300, 300);
   
   background(0,0,0);
   
@@ -45,8 +45,8 @@ tv = loadImage("tv.png");
   targetY = random(cageY);
   
   red = 0;
-  green = 100;
-  blue = 200;
+  green = 120;
+  blue = 220;
   
 }
 
@@ -54,41 +54,41 @@ void draw() {
   
   if (red == 0){ 
     rUp = true;
-  } else if ( red == 200) { rUp = false;
+  } else if ( red == 220) { rUp = false;
   }
   
   if (rUp == true){
-    red = red + .5;
-  } else { red = red - .5;}
+    red = red + 1;
+  } else { red = red - 1;}
   
   if (green == 0){ 
     gUp = true;
-  } else if ( green == 200) { gUp = false;
+  } else if ( green == 220) { gUp = false;
   }
   
   if (gUp == true){
-    green = green + .5;
-  } else { green = green - .5;}
+    green = green + 1;
+  } else { green = green - 1;}
   
     if (blue == 0){ 
     bUp = true;
-  } else if ( blue == 200) { bUp = false;
+  } else if ( blue == 220) { bUp = false;
   }
   
   if (bUp == true){
-    blue = blue + .5;
-  } else { blue = blue - .5;}
+    blue = blue + 1;
+  } else { blue = blue - 1;}
     
 c1 = color(red, green ,blue);
 c2 = color(blue, red ,green);
  
 setGradient(0, 0, width, height, c1, c2, 1);
  
- fill(#efefef, 210);
+ fill(#efefef, 180);
  noStroke();
  rect(0, 0, width, height);
   
-image(tv, 0, 0, 900, 300);
+image(tv, 0, 0, 300, 300);
   
   if (atRest == true) { 
     left = -25; 
