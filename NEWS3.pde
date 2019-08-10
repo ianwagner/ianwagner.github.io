@@ -31,7 +31,7 @@ void setup() {
   
 tv = loadImage("tv.png");
 
-  size(300, 300);
+  size(1200, 300);
   
   background(0,0,0);
   
@@ -88,7 +88,7 @@ setGradient(0, 0, width, height, c1, c2, 1);
  noStroke();
  rect(0, 0, width, height);
   
-image(tv, 0, 0, 300, 300);
+image(tv, 0, 0, 1200, 300);
   
   if (atRest == true) { 
     left = -25; 
