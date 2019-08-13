@@ -73,7 +73,7 @@ font-size: 16px;
 .button {
   width : 200px;
   height : 50px;
-  background : #43695B;
+  background : #FFD700;
   overflow : hidden;
   text-align : center;
   transition : .2s;
@@ -85,7 +85,7 @@ font-size: 16px;
 }
 
 .button:hover{
-background : #6B8D73;
+background : #FFE36C;
 box-shadow: 0px 0px 0px #9b9b9b;
 }
 
@@ -95,7 +95,7 @@ box-shadow: 0px 0px 0px #9b9b9b;
 
 .click{ 
 margin: 14px;
-color: #ffffff; 
+color: #000000; 
 font-weight: 500;
 font-size: 21px;
 }
