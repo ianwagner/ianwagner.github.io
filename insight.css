@@ -15,15 +15,17 @@ height: 100%;
 }
 
 .h1White { 
-font-size: 48px; 
+font-size: 40px; 
 color: #ffffff;
-line-height: 1.5;
+line-height: 1.1;
+font-weight: bold;
 }
 
 .h1 { 
-font-size: 48px; 
+font-size: 40px; 
 color: #000000;
 line-height: 1.5;
+font-weight: bold;
 }
 
 
@@ -39,6 +41,7 @@ font-size: 28px;
 color: #000000;
 font-weight: 300;
 line-height: 1.5;
+font-weight: bold;
 }
 
 .h3 { 
@@ -63,14 +66,15 @@ margin: 0px;
 
 .body2 { 
 font-weight: 500;
-font-size: 16px; 
+font-size: 14px; 
 color: #000000;
 line-height: 1.5;
 margin: 0px;
+font-weight: 600;
 }
 
 .caption { 
-font-size: 12px; 
+font-size: 14px; 
 font-weight: 600;
 color: #000000;
 line-height: 1.5;
@@ -195,6 +199,13 @@ margin-top: 20px;
 margin-bottom: 20px;
 background-color: #050b1e;
 }
+
+.line2 {
+height: 2px;
+margin-top: 20px;
+margin-bottom: 20px;
+background-color: #050b1e;
+}
     
 .col {
 float: center;
@@ -247,7 +258,7 @@ padding-bottom: 2%;
 margin: -8px;
 padding-left: 7%;
 padding-right: 7%;
-height: 100%;
+height: 50px;
 }
     
 .row5 {
@@ -329,6 +340,13 @@ margin-right: 5px;
 margin-bottom: 10px;
 display: inline-grid;
 }
+    
+.logo{
+padding-left: 20px;
+width: 150px;
+height: 150px;
+display: inline-grid;   
+    }
 
 .cardLogo{ 
 border-radius: 15px;
@@ -344,6 +362,13 @@ box-shadow: -20px 7px 20px rgba(70,97,81, 0.2);
 }
 
 @media (max-width: 767px) {
+    
+.logo{
+width: 100px;
+height: 100px;
+padding-bottom: 20px;
+display: inline-grid;   
+}
     
 .icon{
 width: 100%;
