@@ -341,12 +341,18 @@ margin-bottom: 10px;
 display: inline-grid;
 }
     
-.logo{
+.logoD{
 padding-left: 20px;
 width: 150px;
 height: 150px;
+margin-top: -200px;
 display: inline-grid;   
     }
+    
+        .logoP{
+        display: none;
+    }
+    
 
 .cardLogo{ 
 border-radius: 15px;
@@ -363,12 +369,16 @@ box-shadow: -20px 7px 20px rgba(70,97,81, 0.2);
 
 @media (max-width: 767px) {
     
-.logo{
+.logoP{
 width: 100px;
 height: 100px;
-padding-bottom: 20px;
+padding-top: 20px;
 display: inline-grid;   
 }
+    
+    .logoD{
+        display: none;
+    }
     
 .icon{
 width: 100%;
