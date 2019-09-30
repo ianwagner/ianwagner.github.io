@@ -198,7 +198,8 @@ top:30px;
 right: 30px;
 }
     
-.footer { 
+.footer {
+font-family: 'Futura', sans-serif;
 position: absolute;
 }
 
@@ -358,7 +359,19 @@ margin-top: -200px;
 display: inline-grid;   
     }
     
+    .logo_D_black{
+padding-left: 20px;
+padding-right: 20px;
+width: 150px;
+height: 370px;
+background-color: #000000;
+margin-top: -200px;
+display: inline-grid;   
+    }
         .logoP{
+        display: none;
+    }
+        .logo_P_black{
         display: none;
     }
     
@@ -385,7 +398,20 @@ padding-top: 20px;
 display: inline-grid;   
 }
     
+.logo_P_black{
+width: 100px;
+height: 100px;
+background-color: #000000;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+display: inline-grid;   
+}
+    
     .logoD{
+        display: none;
+    }
+        .logo_D_black{
         display: none;
     }
     
