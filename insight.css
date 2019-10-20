@@ -55,6 +55,7 @@ line-height: 1;
 }
 
 .foot { 
+font-family: 'Futura', sans-serif;
 font-size: 21px; 
 color: #ffffff;
 }
@@ -418,6 +419,11 @@ display: inline-grid;
 .icon{
 width: 100%;
 padding-bottom: -10px;
+}
+    
+.footer {
+font-family: 'Futura', sans-serif;
+position: absolute;
 }
 
 .rowArt {
