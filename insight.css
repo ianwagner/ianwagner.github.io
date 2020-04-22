@@ -13,19 +13,19 @@ html,body{margin:0;padding:0}
 }
 
 #color1 {
-    background-color: #25443f;
+    background-color: #143842;
 }
 #color2 {
     background-color: #d86a47;
 }
 #color3 {
-    background-color: #96d8d7;
+    background-color: #5f70ab;
 }
 #color4 {
-    background-color: #be98b2;
+    background-color: #bd6773;
 }
 #color5 {
-    background-color: #dfda6b;
+    background-color: #e0a546;
 }
 .canvas {
 border-radius: 15px;
@@ -44,11 +44,21 @@ line-height: 1.3;
 .quote { 
 font-family: 'Futura', sans-serif;
 font-size: 30px; 
-color: #d86a47;
+color: #b3790d;
 line-height: 1.3;
 text-align: center;
 font-weight: bold;
 }
+
+.quote2 { 
+font-family: 'Futura', sans-serif;
+font-size: 20px; 
+color: #d68e9b;
+line-height: 1.3;
+text-align: center;
+font-weight: bold;
+}
+
 
 .h1 { 
 font-family: 'Futura', sans-serif;
@@ -69,7 +79,7 @@ line-height: 1.5;
 .h2 { 
 font-family: 'Futura', sans-serif;
 font-size: 28px; 
-color: #ffffff;
+color: #934a5d;
 font-weight: 300;
 line-height: 1.5;
 }
@@ -84,7 +94,6 @@ line-height: 1;
 .foot { 
 position:relative;
 display: block;
-margin-top: 10%;
 font-family: 'Futura', sans-serif;
 font-size: 15px; 
 color: #ffffff;
@@ -114,7 +123,7 @@ font-family: 'Futura', sans-serif;
 font-weight: 500;
 font-size: 18px; 
 line-height: 1.5;
-color: #4c8c87;
+color: #293e85;
 }
 
 .caption { 
@@ -135,15 +144,45 @@ margin-top:5px;
 }
 
 .clickS:hover {
-color: #dfda6b;
+color: #e0a546;
 }
 
 .clickS{ 
 margin: 0PX;
 margin-left: 5px;
 margin-right: 5px;    
-color: #f4dcea; 
+color: #ffffff; 
 font-size: 16px;
+}
+
+.buttonO {
+display: inline-block;
+width : 50px;
+height : 50px;
+background : #d68e9b;
+transition : .5s;
+cursor : pointer;
+border-radius : 50px;
+margin-right: 15px;
+}
+
+.buttonO:hover{
+background : #e0a546;
+width : 55px;
+height : 55px;
+border-radius : 100px;
+}
+
+.clickO{ 
+font-family: 'Futura', sans-serif;
+margin: 9px;
+color: #bd6773; 
+font-weight: 500;
+font-size: 24px;
+}
+
+.clickO:hover{
+color : #ffffff;
 }
 
 .button {
@@ -161,13 +200,13 @@ border-radius : 50px;
 }
 
 .button:hover{
-background : #dfda6b;
+background : #293e85;
 }
 
 .click{ 
 font-family: 'Futura', sans-serif;
 margin: 9px;
-color: #be98b2; 
+color: #bd6773; 
 font-weight: 500;
 font-size: 24px;
 }
@@ -177,15 +216,24 @@ color : #ffffff;
 }
 
 .social { 
-height: 50px; 
-padding-right: 10%;
+position: relative;
+display: inline-block;
+width: 25px;
+height: 25px;
+margin: 12%;
 }
 
+@media (min-width: 767px) {
+    
 .center{
 text-align: center;
 }
 
-@media (min-width: 767px) {
+.centerQ{
+text-align: center;
+padding-left: 15%;
+padding-right: 15%;
+}
     
 .icon{
 
@@ -217,7 +265,7 @@ background-color: #050b1e;
 .col {
 position: relative;
 display: inline-block;
-width: 30%;
+width: 33%;
 }
     
 .Acol {
@@ -235,10 +283,9 @@ height: 499px;
 .row0 {
 padding-left: 7%;
 padding-right: 7%;
-padding-top: 5px;
-padding-bottom: 5px;
-height: 10px;
-background-color: #dfda6b;  
+padding-top: 2%;
+padding-bottom: 4%;
+height: auto;
     }
     
 .row {
@@ -263,7 +310,7 @@ height: auto;
 .footer {
 padding-left: 7%;
 padding-right: 7%;
-padding-top: 7%;
+padding-top: 5%;
 height: 300px; 
 }
 
@@ -346,10 +393,30 @@ box-shadow: -20px 7px 20px rgba(70,97,81, 0.2);
 
 @media (max-width: 767px) {
     
+.center{
+text-align: center;
+}
+
+.centerQ{
+text-align: center;
+padding-left: 0%;
+padding-right: 0%;
+}
+  
+    
 .quote { 
 font-family: 'Futura', sans-serif;
 font-size: 22px; 
-color: #d86a47;
+color: #b3790d;
+line-height: 1.3;
+text-align: center;
+font-weight: bold;
+}
+    
+.quote2 { 
+font-family: 'Futura', sans-serif;
+font-size: 15px; 
+color: #ce7281;
 line-height: 1.3;
 text-align: center;
 font-weight: bold;
@@ -387,10 +454,9 @@ padding-bottom: -10px;
 .row0 {
 padding-left: 7%;
 padding-right: 7%;
-padding-top: 5px;
-padding-bottom: 5px;
-height: 10px;
-background-color: #dfda6b;  
+padding-top: 0%;
+padding-bottom: 24%;
+height: auto;
     }
     
 .row {
@@ -417,6 +483,7 @@ padding-left: 7%;
 padding-right: 7%;
 padding-top: 7%;
 height: 300px; 
+padding-bottom: 1%;
 }
 
 .rowArt {
