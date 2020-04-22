@@ -13,7 +13,7 @@ html,body{margin:0;padding:0}
 }
 
 #color1 {
-    background-color: #2b341e;
+    background-color: #25443f;
 }
 #color2 {
     background-color: #d86a47;
@@ -23,6 +23,9 @@ html,body{margin:0;padding:0}
 }
 #color4 {
     background-color: #be98b2;
+}
+#color5 {
+    background-color: #dfda6b;
 }
 .canvas {
 border-radius: 15px;
@@ -453,7 +456,7 @@ margin-bottom: 10px;
 float: center;
 position: relative;
 display: inline-block;
-width: 30%;
+width: 100px;
 align-content: center;
 }
 
@@ -527,21 +530,23 @@ display: none;
 
 @media (max-width: 870px) {
 .art {   
-width: 55%;
+width: 50%;
 height: 55%;
 position: absolute;
-right: 0;
-margin-top: -10%;
+margin-left: 75%;
+margin-top: -20%;
+right:0px;
 }
 }
 
 @media (min-width: 871px) {
 .art {   
-width: 45%;
-height: 45%;
+width: 50%;
+height: 55%;
 position: absolute;
-right: 0;
-margin-top: -10%;
+margin-left: 75%;
+margin-top: -20%;
+right:0px;
 }
 }
 
