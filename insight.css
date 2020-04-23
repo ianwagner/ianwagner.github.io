@@ -27,12 +27,6 @@ html,body{margin:0;padding:0}
 #color5 {
     background-color: #e0a546;
 }
-.canvas {
-border-radius: 15px;
-display: block;
-width: 100%;
-height: 100%;
-}
 
 .h1White { 
 font-family: 'Futura', sans-serif;
@@ -84,19 +78,13 @@ font-weight: 300;
 line-height: 1.5;
 }
 
-.h3 { 
-font-size: 21px;
-font-weight: 100;
-color: #000000;
-line-height: 1;
-}
-
 .foot { 
 position:relative;
 display: block;
 font-family: 'Futura', sans-serif;
 font-size: 15px; 
 color: #ffffff;
+padding-bottom: 12px;
 }
 
 .body { 
@@ -108,31 +96,12 @@ line-height: 1.5;
 margin: 0px;
 }
 
-.body2 { 
-font-family: 'Optima', sans-serif;
-font-weight: 500;
-font-size: 16px; 
-color: #000000;
-line-height: 1.5;
-margin: 0px;
-font-weight: ;
-}
-
 .Uicons { 
 font-family: 'Futura', sans-serif;
 font-weight: 500;
 font-size: 18px; 
 line-height: 1.5;
 color: #293e85;
-}
-
-.caption { 
-font-size: 14px; 
-font-family: 'Optima', sans-serif;
-font-weight: 600;
-color: #000000;
-line-height: 2;
-align-content: center;
 }
 
 .buttonT {
@@ -168,9 +137,6 @@ margin-right: 15px;
 
 .buttonO:hover{
 background : #e0a546;
-width : 55px;
-height : 55px;
-border-radius : 100px;
 }
 
 .clickO{ 
@@ -187,7 +153,7 @@ color : #ffffff;
 
 .button {
 position:fixed;
-bottom: 30px;
+bottom: 45px;
 left: 50%;
 margin-left: -100px;
 width : 200px;
@@ -235,19 +201,6 @@ padding-left: 15%;
 padding-right: 15%;
 }
     
-.icon{
-
-}
-
-.canvas {
-width: 100%;
-}	
-    
-.header { 
-height: 73px;
-background-color: #ffffff;
-}
-    
 .line {
 height: 1px;
 margin-top: 20px;
@@ -268,23 +221,11 @@ display: inline-block;
 width: 33%;
 }
     
-.Acol {
-float: center;
-width: 100%;
-}
-    
-.rowArt {
-padding-left: 7%;
-padding-right: 7%;
-padding-top: 7%;
-height: 499px;
-}
-    
 .row0 {
 padding-left: 7%;
 padding-right: 7%;
-padding-top: 2%;
-padding-bottom: 4%;
+padding-top: 4%;
+padding-bottom: 90px;
 height: auto;
     }
     
@@ -307,11 +248,19 @@ padding-bottom: 0%;
 height: auto;
 }
     
+.rowLogo {
+padding-left: 7%;
+padding-right: 7%;
+height: 60px;
+padding-top: 2%;
+}
+    
 .footer {
 padding-left: 7%;
 padding-right: 7%;
 padding-top: 5%;
 height: 300px; 
+padding-bottom: 10px;
 }
 
 .card1{ 
@@ -329,30 +278,6 @@ display: inline-block;
 width: 100%;
 align-content: left;
 }
-
-.card3{ 
-float: right;
-position: relative;
-display: inline-block;
-width: 75%;
-padding-left: 20px;
-align-content: center;
-}
-
-.cardD{
-margin-left: 10px;
-width: 100px;
-display: inline-grid;
-}
-
-.cardD3{ 
-border-radius: 15px;
-background-color: #ffffff;
-width:48%;
-margin-right: 5px;
-margin-bottom: 10px;
-display: inline-grid;
-}
     
 .logoD{
 
@@ -361,7 +286,7 @@ height: 200px;
 display: inline-grid;   
     }
     
-    .logo_D_black{
+.logo_D_black{
 padding-left: 20px;
 padding-right: 20px;
 width: 150px;
@@ -416,7 +341,7 @@ font-weight: bold;
 .quote2 { 
 font-family: 'Futura', sans-serif;
 font-size: 15px; 
-color: #ce7281;
+color: #d68e9b;
 line-height: 1.3;
 text-align: center;
 font-weight: bold;
@@ -454,8 +379,8 @@ padding-bottom: -10px;
 .row0 {
 padding-left: 7%;
 padding-right: 7%;
-padding-top: 0%;
-padding-bottom: 24%;
+padding-top: 7%;
+padding-bottom: 90px;
 height: auto;
     }
     
@@ -478,12 +403,19 @@ padding-bottom: 7%;
 height: auto;
 }
     
+.rowLogo {
+padding-left: 7%;
+padding-right: 7%;
+height: 90px;
+padding-top: 0%;
+}
+    
 .footer {
 padding-left: 7%;
 padding-right: 7%;
 padding-top: 7%;
 height: 300px; 
-padding-bottom: 1%;
+padding-bottom: 10px;
 }
 
 .rowArt {
@@ -592,37 +524,5 @@ box-shadow: -20px 7px 20px rgba(70,97,81, 0.2);
     
 .art {   
 display: none;
-}
-}
-
-@media (max-width: 870px) {
-.art {   
-width: 50%;
-height: 55%;
-position: absolute;
-margin-left: 75%;
-margin-top: -20%;
-right:0px;
-}
-}
-
-@media (min-width: 871px) {
-.art {   
-width: 50%;
-height: 55%;
-position: absolute;
-margin-left: 75%;
-margin-top: -20%;
-right:0px;
-}
-}
-
-@media (min-width: 1200px) {
-.art {   
-width: 45%;
-height: 45%;
-position: absolute;
-right: 0;
-margin-top: -20%;
 }
 }
