@@ -365,6 +365,10 @@ margin-top: -150px;
 width: 270px;
 height: 270px; 
     }
+
+.moiP{
+display: none;  
+}
     
 .logoD{
 
@@ -429,9 +433,15 @@ text-align: center;
 }
     
 .logoP{
-width: 220px;
-height: 220px;
-
+padding-top: 7%;
+width: 180px;
+height: 180px;
+display: inline-grid;   
+}
+    
+.moiP{
+width: 230px;
+height: 230px;
 display: inline-grid;   
 }
     
