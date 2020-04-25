@@ -317,7 +317,7 @@ height: auto;
 padding-left: 7%;
 padding-right: 7%;
 height: 60px;
-padding-top: 2%;
+padding-top: 3%;
 }
     
 .footer {
@@ -357,6 +357,14 @@ border-style: solid;
 border-width: 2px;
 padding:4%;
 }
+    
+.moiD{
+position: relative;
+float: right;
+margin-top: -150px;
+width: 270px;
+height: 270px; 
+    }
     
 .logoD{
 
@@ -488,7 +496,7 @@ height: auto;
 padding-left: 7%;
 padding-right: 7%;
 height: 90px;
-padding-top: 0%;
+padding-top: 7%;
 }
     
 .footer {
@@ -526,6 +534,10 @@ display: inline-block;
 vertical-align: top;
 
 }
+    
+.moiD{
+display: none;
+    }
     
 .card0{
 position: relative;
