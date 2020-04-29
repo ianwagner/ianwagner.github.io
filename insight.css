@@ -358,6 +358,14 @@ border-width: 2px;
 padding:4%;
 }
     
+.card3:hover .icon{ 
+opacity: 0;
+}
+
+.icon{
+position:absolute;
+    }
+       
 .moiD{
 position: relative;
 float: right;
@@ -465,6 +473,7 @@ display: inline-grid;
 .icon{
 width: auto;
 padding-bottom: -10px;
+display: none;
 }
 
 .row0 {
